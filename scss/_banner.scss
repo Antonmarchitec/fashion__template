@@ -1,0 +1,68 @@
+@import "variables";
+
+/*
+contBanner
+contBanner__boxLeft
+contBanner__title
+contBanner__description
+contBanner__line
+contBanner__btn
+contBanner__boxRight
+
+
+*/
+
+
+.contBanner{
+    width: 100%;
+    height: 500px;
+    padding: 10px 0px;
+    background: white;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    .contBanner__boxLeft{
+        width: 650px;
+        padding: 10px 0px;
+        margin-left: 80px;
+        z-index: 1;
+        .contBanner__title{
+            font-size: 90px;
+            font-family:$font_family_title;
+        }
+
+        .contBanner__description{
+            color: rgb(177, 177, 177);
+            font-size: 60px;
+        }
+
+        .contBanner__line{
+            width: 80%;
+            margin-top: 20px;
+            height: 1px;
+            border: none;
+            background: grey;
+        }
+
+        .contBanner__btn{
+            margin-top: 40px;
+            width: 200px;
+            padding: 10px;
+            border: 2px solid transparent;
+            background: rgb(12, 16, 66);
+            color: white;
+            cursor: pointer;
+        }
+    }
+
+    .contBanner__boxRight{
+        width: 500px;
+        height: 550px;
+        background:url(../images/img_men.png);
+        background-size: 100% 100%;
+        position: absolute;
+        top: 0;
+        right: 80px;
+    }
+}

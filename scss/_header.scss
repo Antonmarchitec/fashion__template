@@ -1,0 +1,81 @@
+@import "variables";
+
+/**
+contHeader
+contHeader__logo
+contHeader__ul
+contHeader__li
+contHeader__a
+contHeader__boxes
+contHeader__box
+boxIcon
+contHeader__btn
+btnIcon
+
+*/
+
+
+.contHeader{
+    width: 100%;
+    padding: 10px 0px;
+    background: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .contHeader__logo{
+        margin-left: 30px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .contHeader__ul{
+        width: 500px;
+        padding: 5px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none;
+        .contHeader__li{
+            width: 100px;
+            padding:5px;
+            text-align: center;
+            .contHeader__a{
+                text-decoration: none;
+                color: grey;
+                font-weight: 600;
+                .arrow{
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+
+    .contHeader__boxes{
+        width: 120px;
+        padding: 5px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-right: 30px;
+        .contHeader__box{
+            width: 32px;
+            height: 32px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .boxIcon{
+                color: grey;
+                font-size: 25px;
+            }
+        }
+    }
+
+    .contHeader__btn{
+        width: 35px;
+        height: 35px;
+        background: brown;
+        margin-right: 20px;
+        display: none;
+    }
+}

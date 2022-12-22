@@ -1,3 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Rakkas&family=Signika+Negative:wght@300;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
+.grid__container {
+  width: 100%;
+  max-width: 1440px;
+  padding: 10px 0px;
+  background: brown;
+  box-shadow: 5px 5px 10px grey;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  gap: 1em;
+  grid-template-areas: "grid__header          grid__header" "grid__banner          grid__banner" "grid__sectionImage    grid__sectionFashion" "grid__sectionCards    grid__sectionCards" "grid__blocks          grid__blocks" "grid__news            grid__news" "grid__designer        grid__designer" "grid__footer          grid__footer";
+}
+.grid__container .grid__header {
+  padding: 10px 0px;
+  background: rgb(238, 92, 92);
+  grid-area: grid__header;
+}
+.grid__container .grid__banner {
+  padding: 10px 0px;
+  background: rgb(238, 92, 92);
+  grid-area: grid__banner;
+}
+.grid__container .grid__sectionImage {
+  padding: 10px 0px;
+  background: rgb(238, 92, 92);
+  grid-area: grid__sectionImage;
+}
+.grid__container .grid__sectionFashion {
+  padding: 10px 0px;
+  background: rgb(238, 92, 92);
+  grid-area: grid__sectionFashion;
+}
+.grid__container .grid__sectionCards {
+  padding: 10px 0px;
+  background: rgb(238, 92, 92);
+  grid-area: grid__sectionCards;
+}
+.grid__container .grid__blocks {
+  padding: 10px 0px;
+  background: rgb(238, 92, 92);
+  grid-area: grid__blocks;
+}
+.grid__container .grid__news {
+  padding: 10px 0px;
+  background: rgb(238, 92, 92);
+  grid-area: grid__news;
+}
+.grid__container .grid__designer {
+  padding: 10px 0px;
+  background: rgb(238, 92, 92);
+  grid-area: grid__designer;
+}
+.grid__container .grid__footer {
+  padding: 10px 0px;
+  background: rgb(238, 92, 92);
+  grid-area: grid__footer;
+}
+
+/**
+contHeader
+contHeader__logo
+contHeader__ul
+contHeader__li
+contHeader__a
+contHeader__boxes
+contHeader__box
+boxIcon
+contHeader__btn
+btnIcon
+
+*/
+.contHeader {
+  width: 100%;
+  padding: 10px 0px;
+  background: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.contHeader .contHeader__logo {
+  margin-left: 30px;
+  width: 60px;
+  height: 60px;
+}
+.contHeader .contHeader__ul {
+  width: 500px;
+  padding: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+.contHeader .contHeader__ul .contHeader__li {
+  width: 100px;
+  padding: 5px;
+  text-align: center;
+}
+.contHeader .contHeader__ul .contHeader__li .contHeader__a {
+  text-decoration: none;
+  color: grey;
+  font-weight: 600;
+}
+.contHeader .contHeader__ul .contHeader__li .contHeader__a .arrow {
+  font-size: 15px;
+}
+.contHeader .contHeader__boxes {
+  width: 120px;
+  padding: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: 30px;
+}
+.contHeader .contHeader__boxes .contHeader__box {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contHeader .contHeader__boxes .contHeader__box .boxIcon {
+  color: grey;
+  font-size: 25px;
+}
+.contHeader .contHeader__btn {
+  width: 35px;
+  height: 35px;
+  background: brown;
+  margin-right: 20px;
+  display: none;
+}
+
+/*
+contBanner
+contBanner__boxLeft
+contBanner__title
+contBanner__description
+contBanner__line
+contBanner__btn
+contBanner__boxRight
+
+
+*/
+.contBanner {
+  width: 100%;
+  height: 500px;
+  padding: 10px 0px;
+  background: white;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.contBanner .contBanner__boxLeft {
+  width: 650px;
+  padding: 10px 0px;
+  margin-left: 80px;
+  z-index: 1;
+}
+.contBanner .contBanner__boxLeft .contBanner__title {
+  font-size: 90px;
+  font-family: "Rakkas", cursive;
+}
+.contBanner .contBanner__boxLeft .contBanner__description {
+  color: rgb(177, 177, 177);
+  font-size: 60px;
+}
+.contBanner .contBanner__boxLeft .contBanner__line {
+  width: 80%;
+  margin-top: 20px;
+  height: 1px;
+  border: none;
+  background: grey;
+}
+.contBanner .contBanner__boxLeft .contBanner__btn {
+  margin-top: 40px;
+  width: 200px;
+  padding: 10px;
+  border: 2px solid transparent;
+  background: rgb(12, 16, 66);
+  color: white;
+  cursor: pointer;
+}
+.contBanner .contBanner__boxRight {
+  width: 500px;
+  height: 550px;
+  background: url(../images/img_men.png);
+  background-size: 100% 100%;
+  position: absolute;
+  top: 0;
+  right: 80px;
+}
+
+/**
+contSectionImage
+subContSectionImage
+*/
+.contSectionImage {
+  width: 400px;
+  height: 250px;
+  margin: 100px auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: rgb(5, 28, 155);
+}
+.contSectionImage .subContSectionImage {
+  width: 400px;
+  height: 250px;
+  margin-top: -150px;
+  margin-left: -150px;
+}
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,25 @@
+@import "variables";
+
+/**
+contSectionImage
+subContSectionImage
+*/
+
+.contSectionImage{
+
+    width: 400px;
+    height: 250px;
+    margin:100px auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: rgb(5, 28, 155);
+    .subContSectionImage{
+        width: 400px;
+        height: 250px;
+        margin-top: -150px;
+        margin-left: -150px;
+    }
+}
