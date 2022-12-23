@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
+    
+    <!--CDN SWIPER-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 
     <!--FONT AWESON-->
     <script src="https://kit.fontawesome.com/b7fb745aab.js" crossorigin="anonymous"></script>
@@ -88,18 +91,115 @@
         </div>
 
         <div class="grid__sectionCards">
-            <div class="contCards" id="contCards">
-                <figure class="contCards__image">
-                    <img>
-                </figure>
+            <div class="contCards">
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                           <div class="cont__slide">
+                              <figure class="slide__image">
+                                <img src="./images/fig1.png" alt="figura1" style="width:100%;height:100%;">
+                              </figure>  
 
-                <h3 class="contCards__name" id="contCards__name"> Name Garment </h3>
+                              <h2 class="slide__name"> WEDDING DRESS </h2>
+                              <p class="slide__description">Price: 100$</p>
+                           </div>     
+                        </div>
 
-                <h3 class="contCards__price"> Price: <span class="spanPrice" id="spanPrice"> 00 </span>$</h3>
+                        <div class="swiper-slide">
+                            <div class="cont__slide">
+                                <figure class="slide__image">
+                                  <img src="./images/fig2.png" alt="figura1" style="width:100%;height:100%;">
+                                </figure>  
+  
+                                <h2 class="slide__name"> WEDDING DRESS </h2>
+                                <p class="slide__description">Price: 200$</p>
+                             </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="cont__slide">
+                                <figure class="slide__image">
+                                  <img src="./images/fig3.png" alt="figura1" style="width:100%;height:100%;">
+                                </figure>  
+  
+                                <h2 class="slide__name"> WEDDING DRESS </h2>
+                                <p class="slide__description">Price: 300$</p>
+                             </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="cont__slide">
+                                <figure class="slide__image">
+                                  <img src="./images/fig4.png" alt="figura4" style="width:100%;height:100%;">
+                                </figure>  
+  
+                                <h2 class="slide__name"> WEDDING DRESS </h2>
+                                <p class="slide__description">Price: 400$</p>
+                             </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="cont__slide">
+                                <figure class="slide__image">
+                                  <img src="./images/fig5.png" alt="figura5" style="width:100%;height:100%;">
+                                </figure>  
+  
+                                <h2 class="slide__name"> WEDDING DRESS </h2>
+                                <p class="slide__description">Price: 500$</p>
+                             </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="cont__slide">
+                                <figure class="slide__image">
+                                  <img src="./images/fig6.png" alt="figura1" style="width:100%;height:100%;">
+                                </figure>  
+  
+                                <h2 class="slide__name"> WEDDING DRESS </h2>
+                                <p class="slide__description">Price: 600$</p>
+                             </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="cont__slide">
+                                <figure class="slide__image">
+                                  <img src="./images/fig7.png" alt="figura1" style="width:100%;height:100%;">
+                                </figure>  
+  
+                                <h2 class="slide__name"> WEDDING DRESS </h2>
+                                <p class="slide__description">Price: 700$</p>
+                             </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="cont__slide">
+                                <figure class="slide__image">
+                                  <img src="./images/fig8.png" alt="figura8" style="width:100%;height:100%;">
+                                </figure>  
+  
+                                <h2 class="slide__name"> WEDDING DRESS </h2>
+                                <p class="slide__description">Price: 800$</p>
+                             </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="cont__slide">
+                                <figure class="slide__image">
+                                  <img src="./images/fig9.png" alt="figura9" style="width:100%;height:100%;">
+                                </figure>  
+  
+                                <h2 class="slide__name"> WEDDING DRESS </h2>
+                                <p class="slide__description">Price: 900$</p>
+                             </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-button-next"></div>
+                    
+                    <div class="swiper-button-prev"></div>
+                </div>
             </div>
-
-            <!--TEMPLATE-->
-            <template id="contCards__template"></template>
         </div>
 
         <div class="grid__blocks">
@@ -179,6 +279,12 @@
         <div class="btnTop"></div>
     </main>
 
+
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/swiper.js"></script>
     
 </body>
 </html>

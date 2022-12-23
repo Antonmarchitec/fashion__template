@@ -1,17 +1,5 @@
 @import "variables";
 
-/*
-contBanner
-contBanner__boxLeft
-contBanner__title
-contBanner__description
-contBanner__line
-contBanner__btn
-contBanner__boxRight
-
-
-*/
-
 
 .contBanner{
     width: 100%;
@@ -30,10 +18,11 @@ contBanner__boxRight
         .contBanner__title{
             font-size: 90px;
             font-family:$font_family_title;
+            color: $color_black;
         }
 
         .contBanner__description{
-            color: rgb(177, 177, 177);
+            color:$color_grey_tenue;
             font-size: 60px;
         }
 
@@ -42,7 +31,7 @@ contBanner__boxRight
             margin-top: 20px;
             height: 1px;
             border: none;
-            background: grey;
+            background:$color_grey_tenue;
         }
 
         .contBanner__btn{
@@ -50,7 +39,7 @@ contBanner__boxRight
             width: 200px;
             padding: 10px;
             border: 2px solid transparent;
-            background: rgb(12, 16, 66);
+            background: $color_blue;
             color: white;
             cursor: pointer;
         }

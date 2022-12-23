@@ -1,0 +1,35 @@
+@import "variables";
+
+/*
+contSectionFashion
+contSectionFashion__title
+contSectionFashion__parraf
+contSectionFashion__btn
+
+*/
+
+
+.contSectionFashion{
+    margin-top: 60px;
+    width: 100%;
+    padding: 20px;
+    background: white;
+    .contSectionFashion__title{
+        color: $color_grey_fuerte;
+        font-size: 35px;
+    }
+    .contSectionFashion__parraf{
+        margin-top: 20px;
+        color:$color_grey_tenue;
+    }
+
+    .contSectionFashion__btn{
+        margin-top: 25px;
+        width: 200px;
+        padding: 10px 0px;
+        border: none;
+        background: $color_grey_fuerte;
+        color: $color_white;
+        cursor: pointer;
+    }
+}

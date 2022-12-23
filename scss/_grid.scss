@@ -10,7 +10,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
-    gap: 1em;
+    //gap: 1em;
     grid-template-areas: 
         "grid__header          grid__header"
         "grid__banner          grid__banner"
@@ -24,31 +24,31 @@
 
     .grid__header{
         padding: 10px 0px;
-        background: rgb(238, 92, 92);
+        background: white;
         grid-area: grid__header;
     }
 
     .grid__banner{
         padding: 10px 0px;
-        background: rgb(238, 92, 92);
+        background: white;
         grid-area: grid__banner;
     }
 
     .grid__sectionImage{
         padding: 10px 0px;
-        background: rgb(238, 92, 92);
+        background: white;
         grid-area: grid__sectionImage;
     }
 
     .grid__sectionFashion{
         padding: 10px 0px;
-        background: rgb(238, 92, 92);
+        background: white;
         grid-area: grid__sectionFashion;
     }
 
     .grid__sectionCards{
         padding: 10px 0px;
-        background: rgb(238, 92, 92);
+        background: rgb(255, 255, 255);
         grid-area: grid__sectionCards;
     }
 

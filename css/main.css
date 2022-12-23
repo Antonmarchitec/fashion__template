@@ -15,32 +15,31 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
-  gap: 1em;
   grid-template-areas: "grid__header          grid__header" "grid__banner          grid__banner" "grid__sectionImage    grid__sectionFashion" "grid__sectionCards    grid__sectionCards" "grid__blocks          grid__blocks" "grid__news            grid__news" "grid__designer        grid__designer" "grid__footer          grid__footer";
 }
 .grid__container .grid__header {
   padding: 10px 0px;
-  background: rgb(238, 92, 92);
+  background: white;
   grid-area: grid__header;
 }
 .grid__container .grid__banner {
   padding: 10px 0px;
-  background: rgb(238, 92, 92);
+  background: white;
   grid-area: grid__banner;
 }
 .grid__container .grid__sectionImage {
   padding: 10px 0px;
-  background: rgb(238, 92, 92);
+  background: white;
   grid-area: grid__sectionImage;
 }
 .grid__container .grid__sectionFashion {
   padding: 10px 0px;
-  background: rgb(238, 92, 92);
+  background: white;
   grid-area: grid__sectionFashion;
 }
 .grid__container .grid__sectionCards {
   padding: 10px 0px;
-  background: rgb(238, 92, 92);
+  background: rgb(255, 255, 255);
   grid-area: grid__sectionCards;
 }
 .grid__container .grid__blocks {
@@ -139,17 +138,6 @@ btnIcon
   display: none;
 }
 
-/*
-contBanner
-contBanner__boxLeft
-contBanner__title
-contBanner__description
-contBanner__line
-contBanner__btn
-contBanner__boxRight
-
-
-*/
 .contBanner {
   width: 100%;
   height: 500px;
@@ -169,9 +157,10 @@ contBanner__boxRight
 .contBanner .contBanner__boxLeft .contBanner__title {
   font-size: 90px;
   font-family: "Rakkas", cursive;
+  color: rgb(0, 0, 0);
 }
 .contBanner .contBanner__boxLeft .contBanner__description {
-  color: rgb(177, 177, 177);
+  color: rgb(97, 97, 97);
   font-size: 60px;
 }
 .contBanner .contBanner__boxLeft .contBanner__line {
@@ -179,14 +168,14 @@ contBanner__boxRight
   margin-top: 20px;
   height: 1px;
   border: none;
-  background: grey;
+  background: rgb(97, 97, 97);
 }
 .contBanner .contBanner__boxLeft .contBanner__btn {
   margin-top: 40px;
   width: 200px;
   padding: 10px;
   border: 2px solid transparent;
-  background: rgb(12, 16, 66);
+  background: rgb(20, 17, 57);
   color: white;
   cursor: pointer;
 }
@@ -213,13 +202,108 @@ subContSectionImage
   justify-content: center;
   align-items: center;
   position: relative;
-  background: rgb(5, 28, 155);
+  background: rgb(20, 17, 57);
 }
 .contSectionImage .subContSectionImage {
   width: 400px;
   height: 250px;
   margin-top: -150px;
   margin-left: -150px;
+}
+
+/*
+contSectionFashion
+contSectionFashion__title
+contSectionFashion__parraf
+contSectionFashion__btn
+
+*/
+.contSectionFashion {
+  margin-top: 60px;
+  width: 100%;
+  padding: 20px;
+  background: white;
+}
+.contSectionFashion .contSectionFashion__title {
+  color: rgb(61, 61, 61);
+  font-size: 35px;
+}
+.contSectionFashion .contSectionFashion__parraf {
+  margin-top: 20px;
+  color: rgb(97, 97, 97);
+}
+.contSectionFashion .contSectionFashion__btn {
+  margin-top: 25px;
+  width: 200px;
+  padding: 10px 0px;
+  border: none;
+  background: rgb(61, 61, 61);
+  color: white;
+  cursor: pointer;
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+html .contCards,
+body .contCards {
+  width: 90%;
+  height: 360px;
+  margin: 10px auto;
+}
+html .contCards .swiper,
+body .contCards .swiper {
+  width: 100%;
+  height: 100%;
+}
+html .contCards .swiper .swiper-wrapper,
+body .contCards .swiper .swiper-wrapper {
+  background: transparent;
+}
+html .contCards .swiper .swiper-wrapper .swiper-slide,
+body .contCards .swiper .swiper-wrapper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: rgb(210, 210, 210);
+  border-radius: 10px;
+  /*.swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }*/
+}
+html .contCards .swiper .swiper-wrapper .swiper-slide .slide__image,
+body .contCards .swiper .swiper-wrapper .swiper-slide .slide__image {
+  width: 100%;
+  height: 280px;
+  padding: 20px 10px;
+}
+html .contCards .swiper .swiper-wrapper .swiper-slide .slide__name,
+body .contCards .swiper .swiper-wrapper .swiper-slide .slide__name {
+  margin-top: 10px;
+  color: rgb(61, 61, 61);
+  font-size: 18px;
+}
+html .contCards .swiper .swiper-wrapper .swiper-slide .slide__description,
+body .contCards .swiper .swiper-wrapper .swiper-slide .slide__description {
+  color: rgb(97, 97, 97);
+}
+html .contCards .swiper .swiper-button-next,
+body .contCards .swiper .swiper-button-next {
+  color: rgb(20, 17, 57);
+}
+html .contCards .swiper .swiper-button-prev,
+body .contCards .swiper .swiper-button-prev {
+  color: rgb(20, 17, 57);
 }
 
 /*# sourceMappingURL=main.css.map */
