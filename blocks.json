@@ -21,21 +21,21 @@
     ,
     {
         "id": 4,
-        "name": "Summer",
+        "name": "Daring",
         "description":"Fashion",
         "image":"./images/per4.png"
     },
     {
         "id": 5,
-        "name": "Amazing",
+        "name": "Youth",
         "description":"Chance",
         "image":"./images/per5.png"
 
     },
     {
         "id": 6,
-        "name": "Big sale",
-        "description":"Uplo 20%",
+        "name": "formally",
+        "description":"Uplo 50%",
         "image":"./images/per6.png"
     }
 ]
