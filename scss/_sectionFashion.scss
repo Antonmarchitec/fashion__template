@@ -1,14 +1,5 @@
 @import "variables";
 
-/*
-contSectionFashion
-contSectionFashion__title
-contSectionFashion__parraf
-contSectionFashion__btn
-
-*/
-
-
 .contSectionFashion{
     margin-top: 60px;
     width: 100%;
@@ -16,7 +7,7 @@ contSectionFashion__btn
     background: white;
     .contSectionFashion__title{
         color: $color_grey_fuerte;
-        font-size: 35px;
+        font-size: $font_size_subtitle;
     }
     .contSectionFashion__parraf{
         margin-top: 20px;

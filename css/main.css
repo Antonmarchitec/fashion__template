@@ -15,6 +15,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
+  gap: 1em;
   grid-template-areas: "grid__header          grid__header" "grid__banner          grid__banner" "grid__sectionImage    grid__sectionFashion" "grid__sectionCards    grid__sectionCards" "grid__blocks          grid__blocks" "grid__news            grid__news" "grid__designer        grid__designer" "grid__footer          grid__footer";
 }
 .grid__container .grid__header {
@@ -44,7 +45,7 @@
 }
 .grid__container .grid__blocks {
   padding: 10px 0px;
-  background: rgb(238, 92, 92);
+  background: rgb(255, 255, 255);
   grid-area: grid__blocks;
 }
 .grid__container .grid__news {
@@ -211,13 +212,6 @@ subContSectionImage
   margin-left: -150px;
 }
 
-/*
-contSectionFashion
-contSectionFashion__title
-contSectionFashion__parraf
-contSectionFashion__btn
-
-*/
 .contSectionFashion {
   margin-top: 60px;
   width: 100%;
@@ -253,23 +247,35 @@ body {
   margin: 0;
   padding: 0;
 }
-html .contCards,
-body .contCards {
+html .contSectionCards,
+body .contSectionCards {
+  width: 100%;
+  padding: 10px 0px;
+}
+html .contSectionCards .contCards__title,
+body .contSectionCards .contCards__title {
+  color: rgb(61, 61, 61);
+  margin-left: 60px;
+  font-size: 35px;
+}
+html .contSectionCards .contCards,
+body .contSectionCards .contCards {
   width: 90%;
-  height: 360px;
+  height: 380px;
   margin: 10px auto;
 }
-html .contCards .swiper,
-body .contCards .swiper {
+html .contSectionCards .contCards .swiper,
+body .contSectionCards .contCards .swiper {
+  margin-top: 20px;
   width: 100%;
   height: 100%;
 }
-html .contCards .swiper .swiper-wrapper,
-body .contCards .swiper .swiper-wrapper {
+html .contSectionCards .contCards .swiper .swiper-wrapper,
+body .contSectionCards .contCards .swiper .swiper-wrapper {
   background: transparent;
 }
-html .contCards .swiper .swiper-wrapper .swiper-slide,
-body .contCards .swiper .swiper-wrapper .swiper-slide {
+html .contSectionCards .contCards .swiper .swiper-wrapper .swiper-slide,
+body .contSectionCards .contCards .swiper .swiper-wrapper .swiper-slide {
   text-align: center;
   font-size: 18px;
   background: rgb(210, 210, 210);
@@ -281,29 +287,105 @@ body .contCards .swiper .swiper-wrapper .swiper-slide {
       object-fit: cover;
   }*/
 }
-html .contCards .swiper .swiper-wrapper .swiper-slide .slide__image,
-body .contCards .swiper .swiper-wrapper .swiper-slide .slide__image {
+html .contSectionCards .contCards .swiper .swiper-wrapper .swiper-slide .slide__image,
+body .contSectionCards .contCards .swiper .swiper-wrapper .swiper-slide .slide__image {
   width: 100%;
   height: 280px;
   padding: 20px 10px;
 }
-html .contCards .swiper .swiper-wrapper .swiper-slide .slide__name,
-body .contCards .swiper .swiper-wrapper .swiper-slide .slide__name {
+html .contSectionCards .contCards .swiper .swiper-wrapper .swiper-slide .slide__name,
+body .contSectionCards .contCards .swiper .swiper-wrapper .swiper-slide .slide__name {
   margin-top: 10px;
   color: rgb(61, 61, 61);
   font-size: 18px;
 }
-html .contCards .swiper .swiper-wrapper .swiper-slide .slide__description,
-body .contCards .swiper .swiper-wrapper .swiper-slide .slide__description {
+html .contSectionCards .contCards .swiper .swiper-wrapper .swiper-slide .slide__description,
+body .contSectionCards .contCards .swiper .swiper-wrapper .swiper-slide .slide__description {
   color: rgb(97, 97, 97);
 }
-html .contCards .swiper .swiper-button-next,
-body .contCards .swiper .swiper-button-next {
+html .contSectionCards .contCards .swiper .swiper-button-next,
+body .contSectionCards .contCards .swiper .swiper-button-next {
   color: rgb(20, 17, 57);
 }
-html .contCards .swiper .swiper-button-prev,
-body .contCards .swiper .swiper-button-prev {
+html .contSectionCards .contCards .swiper .swiper-button-prev,
+body .contSectionCards .contCards .swiper .swiper-button-prev {
   color: rgb(20, 17, 57);
+}
+
+/**
+contBlocks
+contBlocks__title
+contBlocks__contDesc
+line
+text
+contBlocks__image
+contBlocks__btn
+*/
+.contBlocks {
+  width: 100%;
+  padding: 10px 0px;
+  background: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.contBlocks .contBlocks__block {
+  width: 350px;
+  height: 280px;
+  background: white;
+  margin: 10px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  background: rgb(221, 221, 221);
+  border-radius: 3px;
+}
+.contBlocks .contBlocks__block .contBlocks__title {
+  color: rgb(61, 61, 61);
+  font-size: 35px;
+  margin-left: 20px;
+  z-index: 1;
+}
+.contBlocks .contBlocks__block .contBlocks__contDesc {
+  width: 130px;
+  padding: 5px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 20px;
+  z-index: 1;
+}
+.contBlocks .contBlocks__block .contBlocks__contDesc .line {
+  width: 50px;
+  height: 3px;
+  background: rgb(97, 97, 97);
+}
+.contBlocks .contBlocks__block .contBlocks__contDesc .text {
+  color: rgb(97, 97, 97);
+  font-size: 18px;
+}
+.contBlocks .contBlocks__block .contBlocks__image {
+  width: 200px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+}
+.contBlocks .contBlocks__block .contBlocks__btn {
+  margin-top: 10px;
+  margin-left: 20px;
+  width: 100px;
+  padding: 10px 0px;
+  background: rgb(61, 61, 61);
+  color: white;
+  border: none;
+}
+.contBlocks .contBlocks__block .contBlocks__btn:hover {
+  background: rgb(97, 97, 97);
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=main.css.map */

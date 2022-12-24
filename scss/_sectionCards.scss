@@ -10,53 +10,66 @@ html,
         color: #000;
         margin: 0;
         padding: 0;
-        .contCards{
-            width: 90%;
-            height: 360px;
-            margin: 10px auto;
-            .swiper {
-                width: 100%;
-                height: 100%;
-                .swiper-wrapper{
-                    background: transparent;
-                    .swiper-slide {
-                        text-align: center;
-                        font-size: 18px;
-                        background:rgb(210, 210, 210);
-                        border-radius: 10px;
-                        /*.swiper-slide img {
-                            display: block;
-                            width: 100%;
-                            height: 100%;
-                            object-fit: cover;
-                        }*/
-                        .slide__image{
-                            width: 100%;
-                            height: 280px;
-                            padding: 20px 10px;
-                        }
-                        .slide__name{
-                            margin-top: 10px;
-                            color: $color_grey_fuerte;
+        .contSectionCards{
+            width: 100%;
+            padding: 10px 0px;
+            .contCards__title{
+                color:$color_grey_fuerte;
+                margin-left: 60px;
+                font-size: $font_size_subtitle;
+            }
+    
+            .contCards{
+                width: 90%;
+                height: 380px;
+                margin: 10px auto;
+        
+                //BLOCK SWIPER
+                .swiper {
+                    margin-top: 20px;
+                    width: 100%;
+                    height: 100%;
+                    .swiper-wrapper{
+                        background: transparent;
+                        .swiper-slide {
+                            text-align: center;
                             font-size: 18px;
-                        }
-                        .slide__description{
-                            color: $color_grey_tenue;
+                            background:rgb(210, 210, 210);
+                            border-radius: 10px;
+                            /*.swiper-slide img {
+                                display: block;
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                            }*/
+                            .slide__image{
+                                width: 100%;
+                                height: 280px;
+                                padding: 20px 10px;
+                            }
+                            .slide__name{
+                                margin-top: 10px;
+                                color: $color_grey_fuerte;
+                                font-size: 18px;
+                            }
+                            .slide__description{
+                                color: $color_grey_tenue;
+                            }
                         }
                     }
-                }
-
-
-
-
-
-
-                .swiper-button-next{
-                    color:rgb(20, 17, 57) ;
-                }
-
-                .swiper-button-prev{
-                    color:rgb(20, 17, 57) ;
+    
+    
+    
+    
+    
+    
+                    .swiper-button-next{
+                        color:rgb(20, 17, 57) ;
+                    }
+    
+                    .swiper-button-prev{
+                        color:rgb(20, 17, 57) ;
+                    }
                 }
             }
         }

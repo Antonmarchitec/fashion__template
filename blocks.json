@@ -1,0 +1,21 @@
+[
+    {
+        "id": 1,
+        "name": "Summer",
+        "description":"Fashion",
+        "image":"./images/per1.png"
+    },
+    {
+        "id": 2,
+        "name": "Amazing",
+        "description":"Chance",
+        "image":"./images/per2.png"
+
+    },
+    {
+        "id": 3,
+        "name": "Big sale",
+        "description":"Uplo 20%",
+        "image":"./images/per3.png"
+    }
+]

@@ -10,7 +10,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
-    //gap: 1em;
+    gap: 1em;
     grid-template-areas: 
         "grid__header          grid__header"
         "grid__banner          grid__banner"
@@ -49,12 +49,12 @@
     .grid__sectionCards{
         padding: 10px 0px;
         background: rgb(255, 255, 255);
-        grid-area: grid__sectionCards;
+        grid-area: grid__sectionCards;  
     }
 
     .grid__blocks{
         padding: 10px 0px;
-        background: rgb(238, 92, 92);
+        background: rgb(255, 255, 255);
         grid-area: grid__blocks;
     }
 
