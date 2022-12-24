@@ -8,15 +8,11 @@
 .grid__container {
   width: 100%;
   max-width: 1440px;
-  padding: 10px 0px;
-  background: brown;
-  box-shadow: 5px 5px 10px grey;
   margin: auto;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
-  gap: 1em;
-  grid-template-areas: "grid__header          grid__header" "grid__banner          grid__banner" "grid__sectionImage    grid__sectionFashion" "grid__sectionCards    grid__sectionCards" "grid__blocks          grid__blocks" "grid__news            grid__news" "grid__designer        grid__designer" "grid__footer          grid__footer";
+  grid-template-areas: "grid__header          grid__header          grid__header          grid__header" "grid__banner          grid__banner          grid__banner          grid__banner" "grid__sectionImage    grid__sectionImage    grid__sectionFashion  grid__sectionFashion" "grid__sectionCards    grid__sectionCards    grid__sectionCards    grid__sectionCards" "grid__blocks          grid__blocks          grid__blocks          grid__blocks" "grid__news            grid__news            grid__news            grid__designer" "grid__footer          grid__footer          grid__footer          grid__footer";
 }
 .grid__container .grid__header {
   padding: 10px 0px;
@@ -50,17 +46,16 @@
 }
 .grid__container .grid__news {
   padding: 10px 0px;
-  background: rgb(238, 92, 92);
+  background: rgb(255, 255, 255);
   grid-area: grid__news;
 }
 .grid__container .grid__designer {
   padding: 10px 0px;
-  background: rgb(238, 92, 92);
+  background: rgb(255, 255, 255);
   grid-area: grid__designer;
 }
 .grid__container .grid__footer {
-  padding: 10px 0px;
-  background: rgb(238, 92, 92);
+  background: rgb(255, 255, 255);
   grid-area: grid__footer;
 }
 
@@ -322,7 +317,8 @@ contBlocks__image
 contBlocks__btn
 */
 .contBlocks {
-  width: 100%;
+  width: 90%;
+  margin: auto;
   padding: 10px 0px;
   background: white;
   display: flex;
@@ -334,14 +330,15 @@ contBlocks__btn
 .contBlocks .contBlocks__block {
   width: 350px;
   height: 280px;
-  background: white;
-  margin: 10px 0px;
+  background: rgb(208, 208, 208);
+  background: linear-gradient(90deg, rgb(208, 208, 208) 0%, rgb(255, 255, 255) 50%, rgb(212, 211, 211) 100%, rgb(255, 255, 255) 100%);
+  box-shadow: 0px 5px 10px rgb(221, 221, 221);
+  margin: 20px 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   position: relative;
-  background: rgb(221, 221, 221);
   border-radius: 3px;
 }
 .contBlocks .contBlocks__block .contBlocks__title {
@@ -386,6 +383,124 @@ contBlocks__btn
 .contBlocks .contBlocks__block .contBlocks__btn:hover {
   background: rgb(97, 97, 97);
   cursor: pointer;
+}
+
+.contNews {
+  width: 90%;
+  padding: 10px 0px;
+  margin-left: 40px;
+}
+.contNews .contNews__title {
+  text-align: center;
+  color: rgb(61, 61, 61);
+  font-size: 35px;
+}
+.contNews .contNews__block {
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.contNews .contNews__block .contNews__boxLeft {
+  width: 300px;
+  height: 200px;
+}
+.contNews .contNews__block .contNews__boxRight {
+  width: calc(60% - 10px);
+}
+.contNews .contNews__block .contNews__boxRight .contNews__boxRight__title {
+  color: rgb(61, 61, 61);
+  font-size: 20px;
+}
+.contNews .contNews__block .contNews__boxRight .contNews__description {
+  margin-top: 10px;
+}
+.contNews .contNews__block .contNews__boxRight .contNews__btn {
+  margin-top: 20px;
+  width: 200px;
+  padding: 10px 0px;
+  border: none;
+  background: rgb(61, 61, 61);
+  color: white;
+}
+.contNews .contNews__block .contNews__boxRight .contNews__btn:hover {
+  background: rgb(97, 97, 97);
+  cursor: pointer;
+}
+
+/*
+contDesigner
+contDesigner__image
+contDesigner__title
+contDesigner__description
+
+*/
+.contDesigner {
+  width: 90%;
+  height: 290px;
+  padding: 30px;
+  text-align: center;
+  background: rgb(221, 221, 221);
+}
+.contDesigner .contDesigner__image {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: auto;
+  border: 3px solid rgb(61, 61, 61);
+}
+.contDesigner .contDesigner__title {
+  margin-top: 10px;
+  color: rgb(61, 61, 61);
+  font-size: 25px;
+}
+.contDesigner .contDesigner__description {
+  margin-top: 10px;
+  color: rgb(97, 97, 97);
+}
+
+/*
+contFooter
+contFooter__image
+contFooter__ul
+contFooter__li
+contFooter__a
+
+*/
+.contFooter {
+  width: 100%;
+  padding: 30px;
+  background: rgb(221, 221, 221);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contFooter .contFooter__image {
+  width: 50px;
+  height: 50px;
+}
+.contFooter .contFooter__ul {
+  width: 500px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+.contFooter .contFooter__ul .contFooter__li {
+  width: 100px;
+  padding: 5px 0px;
+  text-align: center;
+}
+.contFooter .contFooter__ul .contFooter__li .contFooter__a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+.contFooter .contFooter__ul .contFooter__li .contFooter__a:hover {
+  color: rgb(97, 97, 97);
 }
 
 /*# sourceMappingURL=main.css.map */

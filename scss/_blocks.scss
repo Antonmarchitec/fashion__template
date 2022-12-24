@@ -12,7 +12,8 @@ contBlocks__btn
 */
 
 .contBlocks{
-    width: 100%;
+    width: 90%;
+    margin: auto;
     padding: 10px 0px;
     background:$color_white;
     display: flex;
@@ -23,14 +24,15 @@ contBlocks__btn
     .contBlocks__block{
         width: 350px;
         height: 280px;
-        background: white;
-        margin: 10px 0px;
+        background: rgb(208,208,208);
+        background: linear-gradient(90deg, rgba(208,208,208,1) 0%, rgba(255,255,255,1) 50%, rgba(212,211,211,1) 100%, rgba(255,255,255,1) 100%);
+        box-shadow: 0px 5px 10px $color_grey_claro;
+        margin: 20px 0px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
         position: relative;
-        background: $color_grey_claro;
         border-radius: 3px;
         .contBlocks__title{
             color: $color_grey_fuerte;

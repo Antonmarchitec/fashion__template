@@ -3,23 +3,21 @@
 .grid__container{
     width: 100%;
     max-width: 1440px;
-    padding: 10px 0px;
-    background: brown;
-    box-shadow: 5px 5px 10px grey;
+    //padding: 10px 0px;
+    //background: brown;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
-    gap: 1em;
+    //gap: 1em;
     grid-template-areas: 
-        "grid__header          grid__header"
-        "grid__banner          grid__banner"
-        "grid__sectionImage    grid__sectionFashion"
-        "grid__sectionCards    grid__sectionCards"
-        "grid__blocks          grid__blocks"
-        "grid__news            grid__news"
-        "grid__designer        grid__designer"
-        "grid__footer          grid__footer"
+        "grid__header          grid__header          grid__header          grid__header"
+        "grid__banner          grid__banner          grid__banner          grid__banner"
+        "grid__sectionImage    grid__sectionImage    grid__sectionFashion  grid__sectionFashion"
+        "grid__sectionCards    grid__sectionCards    grid__sectionCards    grid__sectionCards"
+        "grid__blocks          grid__blocks          grid__blocks          grid__blocks"
+        "grid__news            grid__news            grid__news            grid__designer"
+        "grid__footer          grid__footer          grid__footer          grid__footer"
     ;
 
     .grid__header{
@@ -60,19 +58,19 @@
 
     .grid__news{
         padding: 10px 0px;
-        background: rgb(238, 92, 92);
+        background: rgb(255, 255, 255);
         grid-area: grid__news;
     }
 
     .grid__designer{
         padding: 10px 0px;
-        background: rgb(238, 92, 92);
+        background: rgb(255, 255, 255);
         grid-area: grid__designer;
     }
 
     .grid__footer{
-        padding: 10px 0px;
-        background: rgb(238, 92, 92);
+        //padding: 10px 0px;
+        background: rgb(255, 255, 255);
         grid-area: grid__footer;
     }
 }

@@ -1,0 +1,37 @@
+@import "variables";
+
+/*
+contDesigner
+contDesigner__image
+contDesigner__title
+contDesigner__description
+
+*/
+
+
+.contDesigner{
+    width:90%;
+    height: 290px;
+    padding: 30px;
+    text-align: center;
+    background: $color_grey_claro;
+    .contDesigner__image{
+        width: 100px;
+        height: 100px;
+        overflow: hidden;
+        border-radius: 50%;
+        margin: auto;
+        border: 3px solid $color_grey_fuerte;
+    }
+
+    .contDesigner__title{
+        margin-top: 10px;
+        color: $color_grey_fuerte;
+        font-size: 25px; 
+    }
+
+    .contDesigner__description{
+        margin-top: 10px;
+        color: $color_grey_tenue;
+    }
+}
