@@ -287,6 +287,9 @@ body .contSectionCards .contCards .swiper .swiper-wrapper .swiper-slide {
   text-align: center;
   font-size: 18px;
   background: rgb(221, 221, 221);
+  border: 2px solid rgb(221, 221, 221);
+  border-radius: 10px;
+  overflow: hidden;
 }
 html .contSectionCards .contCards .swiper .swiper-wrapper .swiper-slide .cont__slide,
 body .contSectionCards .contCards .swiper .swiper-wrapper .swiper-slide .cont__slide {
@@ -294,7 +297,8 @@ body .contSectionCards .contCards .swiper .swiper-wrapper .swiper-slide .cont__s
   height: 100%;
   padding: 10px 0px;
   border: 2px solid transparent;
-  border-radius: 10px;
+  transition: 0.5s linear;
+  overflow: hidden;
 }
 html .contSectionCards .contCards .swiper .swiper-wrapper .swiper-slide .cont__slide .slide__image,
 body .contSectionCards .contCards .swiper .swiper-wrapper .swiper-slide .cont__slide .slide__image {
@@ -315,7 +319,6 @@ body .contSectionCards .contCards .swiper .swiper-wrapper .swiper-slide .cont__s
 }
 html .contSectionCards .contCards .swiper .swiper-wrapper .swiper-slide:hover .cont__slide,
 body .contSectionCards .contCards .swiper .swiper-wrapper .swiper-slide:hover .cont__slide {
-  border: 2px solid rgb(61, 61, 61);
   background: white;
 }
 html .contSectionCards .contCards .swiper .swiper-wrapper .swiper-slide:hover .cont__slide .slide__image,
