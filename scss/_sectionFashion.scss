@@ -2,7 +2,7 @@
 
 .contSectionFashion{
     margin-top: 60px;
-    width: 100%;
+    width: 90%;
     padding: 20px;
     background: white;
     .contSectionFashion__title{
@@ -22,5 +22,9 @@
         background: $color_grey_fuerte;
         color: $color_white;
         cursor: pointer;
+    }
+
+    .contSectionFashion__btn:hover{
+        background: $color_grey_tenue;
     }
 }

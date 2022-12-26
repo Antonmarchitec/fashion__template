@@ -1,19 +1,8 @@
 @import "variables";
 
-
-/**
-contBlocks
-contBlocks__title
-contBlocks__contDesc
-line
-text
-contBlocks__image
-contBlocks__btn
-*/
-
 .contBlocks{
+    margin: 50px auto;
     width: 90%;
-    margin: auto;
     padding: 10px 0px;
     background:$color_white;
     display: flex;

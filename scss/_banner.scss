@@ -43,6 +43,10 @@
             color: white;
             cursor: pointer;
         }
+
+        .contBanner__btn:hover{
+            background: $color_blue_claro;
+        }
     }
 
     .contBanner__boxRight{

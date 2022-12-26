@@ -34,27 +34,42 @@ html,
                         .swiper-slide {
                             text-align: center;
                             font-size: 18px;
-                            background:rgb(210, 210, 210);
-                            border-radius: 10px;
-                            /*.swiper-slide img {
-                                display: block;
+                            background: $color_grey_claro;
+                            //START CODIGO PERSONALIZADO
+                            .cont__slide{
                                 width: 100%;
                                 height: 100%;
-                                object-fit: cover;
-                            }*/
-                            .slide__image{
-                                width: 100%;
-                                height: 280px;
-                                padding: 20px 10px;
+                                padding: 10px 0px;
+                                border: 2px solid transparent;
+                                border-radius: 10px;
+
+                                .slide__image{
+                                    width: 10   0%;
+                                    height: 280px;
+                                    padding: 20px 10px;
+                                    transition: 0.5s all 0.2s;
+                                }
+                                .slide__name{
+                                    margin-top: 10px;
+                                    color: $color_grey_fuerte;
+                                    font-size: 18px;
+                                }
+                                .slide__description{
+                                    color: $color_grey_tenue;
+                                }
                             }
-                            .slide__name{
-                                margin-top: 10px;
-                                color: $color_grey_fuerte;
-                                font-size: 18px;
+
+                            &:hover{
+                                .cont__slide{
+                                    border: 2px solid $color_grey_fuerte;
+                                    background: $color_white;
+                                    .slide__image{
+                                        transform: scale(1.1);
+                                    }
+                                }
                             }
-                            .slide__description{
-                                color: $color_grey_tenue;
-                            }
+                            //END CODIGO PERSONALIZADO
+                            
                         }
                     }
     

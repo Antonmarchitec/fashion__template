@@ -6,11 +6,9 @@ subContSectionImage
 */
 
 .contSectionImage{
-
     width: 400px;
     height: 250px;
     margin:100px auto;
-    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,7 +17,18 @@ subContSectionImage
     .subContSectionImage{
         width: 400px;
         height: 250px;
-        margin-top: -150px;
-        margin-left: -150px;
+        margin-top: -60px;
+        margin-left: -60px;
+        transition: 0.5s all;
     }
+    &:hover{
+        .subContSectionImage{
+            width: 400px;
+            height: 250px;
+            margin-top: -100px;
+            margin-left: -100px;
+            transition: 0.5s all;
+        }
+    }
+    
 }
