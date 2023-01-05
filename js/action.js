@@ -1,10 +1,20 @@
-let action = document.querySelector("#action")
+//let action = document.querySelector("#action")
 let ul_action = document.querySelector("#ul_action")
+let active = false
 
-
-
+/*
 action.addEventListener("mouseover", ()=>{
-  ul_action.classList.toggle("ul_actionJS")
+  ul_action.classList.add("ul_actionJS")
+})
+
+*/
+
+document.getElementById("action").addEventListener("mouseover", () =>{
+  ul_action.classList.add("ul_actionJS")
+})
+
+document.getElementById("action").addEventListener("mouseout", () =>{
+  ul_action.classList.remove("ul_actionJS")
 })
 
 

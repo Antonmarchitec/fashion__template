@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu desplegable dinamico responsive</title>
+
+    <link rel="stylesheet" href="./estilos_menu.css">
+
+    <script src="https://kit.fontawesome.com/b7fb745aab.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <span class="nav-bar" id="btnMenu"><i class="fa-solid fa-bars"></i></span>
+    <nav class="main-nav">
+        <ul class="menu" id="menu">
+            <li class="menu__item"><a href="" class="menu__link"> Inicio </a></li>
+
+            <li class="menu__item"><a href="" class="menu__link"> Nosotros </a></li>
+
+            <li class="menu__item container-submenu">
+                <a href="#" class="menu__link submenu-btn"> Productos <i class="fa-solid fa-caret-down"></i></a>
+                <ul class="submenu">
+                    <li class="menu__item"><a href="" class="menu__link"> Televisores </a></li>
+                    <li class="menu__item"><a href="" class="menu__link"> Computadoras </a></li>
+                    <li class="menu__item"><a href="" class="menu__link"> VideoJuegos </a></li>
+                    <li class="menu__item"><a href="" class="menu__link"> SmartPhones </a></li>
+                </ul>
+            </li>
+
+            <li class="menu__item"><a href="" class="menu__link"> Contacto </a></li>
+        </ul>
+    </nav>
+
+    <script src="./menu.js"></script>
+    
+</body>
+</html>
