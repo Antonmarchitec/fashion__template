@@ -104,14 +104,14 @@ body::-webkit-scrollbar-thumb:hover {
   justify-content: space-around;
   align-items: center;
   list-style: none;
-  background: yellow;
 }
 .contHeader .contHeader__ul .contHeader__li {
   width: 100px;
   padding: 10px 0px;
   text-align: center;
-  background: teal;
   position: relative;
+  background: teal;
+  z-index: 100;
 }
 .contHeader .contHeader__ul .contHeader__li .contHeader__a {
   text-decoration: none;
@@ -127,9 +127,10 @@ body::-webkit-scrollbar-thumb:hover {
   background: rgb(52, 180, 26);
   position: absolute;
   left: 0;
-  top: 35px;
-  opacity: 0;
+  top: 0px;
   transition: 0.5s all;
+  z-index: -1;
+  opacity: 0;
 }
 .contHeader .contHeader__ul .contHeader__li .ul_action .li_action {
   list-style: none;
@@ -140,6 +141,8 @@ body::-webkit-scrollbar-thumb:hover {
   color: yellow;
 }
 .contHeader .contHeader__ul .contHeader__li .ul_action_JS {
+  top: 35px;
+  z-index: 0;
   opacity: 1;
 }
 .contHeader .contHeader__boxes {

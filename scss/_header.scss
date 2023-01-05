@@ -21,13 +21,14 @@
         justify-content: space-around;
         align-items: center;
         list-style: none;
-        background: yellow;
         .contHeader__li{
             width: 100px;
             padding:10px 0px;
             text-align: center;
-            background: teal;
             position: relative;
+            background: teal;
+            z-index: 100;
+
             .contHeader__a{
                 text-decoration: none;
                 color: grey;
@@ -43,9 +44,10 @@
                 background: rgb(52, 180, 26);
                 position: absolute;
                 left: 0;
-                top:35px;
-                opacity: 0;
+                top:0px;
                 transition: 0.5s all;
+                z-index:-1;
+                opacity: 0;
                 .li_action{
                     list-style: none;
                     background: violet;
@@ -55,8 +57,9 @@
                     }
                 }
             }
-
             .ul_action_JS{
+                top: 35px;
+                z-index: 0;
                 opacity: 1;
             }
         }
