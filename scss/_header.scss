@@ -2,12 +2,17 @@
 
 .contHeader{
     width: 100%;
-    padding: 10px 0px;
-    background: white;
+    background:$color_grey_claro;
+    //background: rgb(251, 121, 121);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 10;
     .contHeader__logo{
         margin-left: 30px;
         width: 60px;
@@ -16,22 +21,21 @@
 
     .contHeader__ul{
         width: 500px;
-        padding: 5px;
+        padding: 23px 0px;
         display: flex;
         justify-content: space-around;
         align-items: center;
         list-style: none;
+        background: $color_grey_claro;
         .contHeader__li{
             width: 100px;
             padding:10px 0px;
             text-align: center;
             position: relative;
-            background: teal;
-            z-index: 100;
-
+            background-color: $color_grey_claro;
             .contHeader__a{
                 text-decoration: none;
-                color: grey;
+                color: rgb(114, 114, 114);
                 font-weight: 600;
                 .arrow{
                     font-size: 15px;
@@ -39,28 +43,30 @@
             }
 
             .ul_action{
-                padding: 5px;
-                width: 100px;
-                background: rgb(52, 180, 26);
-                position: absolute;
-                left: 0;
-                top:0px;
-                transition: 0.5s all;
-                z-index:-1;
+                padding: 3px 0px;
+                width: 100%;
+                position:absolute;
+                top: -100px;
+                left: 20px;
+                background: $color_grey_claro;
+                z-index: -1;
                 opacity: 0;
+                transition: 0.5s all;
+
                 .li_action{
                     list-style: none;
-                    background: violet;
+                    padding: 10px 5px;
+                    margin: 2px;
+                    text-align: start;
                     .a_action{
                         text-decoration: none;
-                        color: yellow;
+                        color: rgb(26, 26, 26);
                     }
                 }
             }
-            .ul_action_JS{
-                top: 35px;
-                z-index: 0;
-                opacity: 1;
+            .ul_actionJS{
+               top: 58px;
+               opacity: 1;
             }
         }
     }
