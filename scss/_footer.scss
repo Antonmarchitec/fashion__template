@@ -1,24 +1,12 @@
 @import "variables";
 
 
-/*
-contFooter
-blockFooter
-contFooter__image
-contfooter
-footer__li
-footer__a
-footerLine
-blockPie
-pie__copyRight
-
-*/
 
 .contFooter{
     margin-top: 100px;
     width: 100%;
-    padding: 30px 40px;
-    background:$color_grey_claro;
+    padding: 50px 40px;
+    background:$color_grey_fuerte;
     
     .blockFooter{
         width: 100%;
@@ -36,10 +24,10 @@ pie__copyRight
                 list-style: none;
                 .footer__a{
                     text-decoration: none;
-                    color: $color_grey_fuerte;
+                    color: $color_grey_claro;
                 }
                 .footer__a:hover{
-                    color: $color_black;
+                    color: $color_grey_tenue;
                     font-weight: 600;
                 }
             }
@@ -51,6 +39,7 @@ pie__copyRight
         height: 1.5px;
         margin: 10px auto;
         background: $color_grey_tenue;
+        border: none;
     }
 
     .blockPie{
@@ -58,6 +47,7 @@ pie__copyRight
         padding: 5px 0px;
         .pie__copyRight{
             text-align: center;
+            color: $color_white;
         }
     }
 

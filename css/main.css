@@ -5,6 +5,30 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  scroll-behavior: unset;
+  background: rgb(44, 44, 44);
+}
+
+body::-webkit-scrollbar {
+  width: 15px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: rgb(95, 95, 95);
+  border-radius: 20px;
+  height: 100px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: rgb(50, 50, 50);
+  height: 150px;
+}
+
 .grid__container {
   width: 100%;
   max-width: 1440px;
@@ -59,19 +83,6 @@
   grid-area: grid__footer;
 }
 
-/**
-contHeader
-contHeader__logo
-contHeader__ul
-contHeader__li
-contHeader__a
-contHeader__boxes
-contHeader__box
-boxIcon
-contHeader__btn
-btnIcon
-
-*/
 .contHeader {
   width: 100%;
   padding: 10px 0px;
@@ -93,11 +104,14 @@ btnIcon
   justify-content: space-around;
   align-items: center;
   list-style: none;
+  background: yellow;
 }
 .contHeader .contHeader__ul .contHeader__li {
   width: 100px;
-  padding: 5px;
+  padding: 10px 0px;
   text-align: center;
+  background: teal;
+  position: relative;
 }
 .contHeader .contHeader__ul .contHeader__li .contHeader__a {
   text-decoration: none;
@@ -106,6 +120,27 @@ btnIcon
 }
 .contHeader .contHeader__ul .contHeader__li .contHeader__a .arrow {
   font-size: 15px;
+}
+.contHeader .contHeader__ul .contHeader__li .ul_action {
+  padding: 5px;
+  width: 100px;
+  background: rgb(52, 180, 26);
+  position: absolute;
+  left: 0;
+  top: 35px;
+  opacity: 0;
+  transition: 0.5s all;
+}
+.contHeader .contHeader__ul .contHeader__li .ul_action .li_action {
+  list-style: none;
+  background: violet;
+}
+.contHeader .contHeader__ul .contHeader__li .ul_action .li_action .a_action {
+  text-decoration: none;
+  color: yellow;
+}
+.contHeader .contHeader__ul .contHeader__li .ul_action_JS {
+  opacity: 1;
 }
 .contHeader .contHeader__boxes {
   width: 120px;
@@ -358,6 +393,7 @@ body .contSectionCards .contCards .swiper .swiper-button-prev {
   align-items: flex-start;
   position: relative;
   border-radius: 3px;
+  transition: 0.2s linear;
 }
 .contBlocks .contBlocks__block .contBlocks__title {
   color: rgb(61, 61, 61);
@@ -401,6 +437,12 @@ body .contSectionCards .contCards .swiper .swiper-button-prev {
 .contBlocks .contBlocks__block .contBlocks__btn:hover {
   background: rgb(97, 97, 97);
   cursor: pointer;
+}
+.contBlocks .contBlocks__block:hover {
+  background: rgb(208, 208, 208);
+  background: linear-gradient(90deg, rgb(141, 141, 141) 0%, rgb(255, 255, 255) 50%, rgb(212, 211, 211) 100%, rgb(255, 255, 255) 100%);
+  transform: scale(1.03, 1.03);
+  z-index: 1;
 }
 
 .contNews {
@@ -478,23 +520,11 @@ body .contSectionCards .contCards .swiper .swiper-button-prev {
   color: rgb(97, 97, 97);
 }
 
-/*
-contFooter
-blockFooter
-contFooter__image
-contfooter
-footer__li
-footer__a
-footerLine
-blockPie
-pie__copyRight
-
-*/
 .contFooter {
   margin-top: 100px;
   width: 100%;
-  padding: 30px 40px;
-  background: rgb(221, 221, 221);
+  padding: 50px 40px;
+  background: rgb(61, 61, 61);
 }
 .contFooter .blockFooter {
   width: 100%;
@@ -514,10 +544,10 @@ pie__copyRight
 }
 .contFooter .blockFooter .contfooter .footer__li .footer__a {
   text-decoration: none;
-  color: rgb(61, 61, 61);
+  color: rgb(221, 221, 221);
 }
 .contFooter .blockFooter .contfooter .footer__li .footer__a:hover {
-  color: rgb(0, 0, 0);
+  color: rgb(97, 97, 97);
   font-weight: 600;
 }
 .contFooter .footerLine {
@@ -525,6 +555,7 @@ pie__copyRight
   height: 1.5px;
   margin: 10px auto;
   background: rgb(97, 97, 97);
+  border: none;
 }
 .contFooter .blockPie {
   width: 100%;
@@ -532,6 +563,39 @@ pie__copyRight
 }
 .contFooter .blockPie .pie__copyRight {
   text-align: center;
+  color: white;
+}
+
+.btnTop {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  animation-name: moverArrow;
+  animation: moverArrow;
+  animation-duration: 0.8s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  opacity: 0;
+  transition: 0.5s all;
+}
+
+@keyframes moverArrow {
+  from {
+    transform: translateY(-5px);
+  }
+  to {
+    transform: translateY(5px);
+  }
+}
+.btnTop_JS {
+  opacity: 1;
 }
 
 /*# sourceMappingURL=main.css.map */

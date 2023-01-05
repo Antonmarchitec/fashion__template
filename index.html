@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
+
+    <!--PERSONALIZADO-->
+    <link rel="stylesheet" href="./css/dowloader.css">
     
     <!--CDN SWIPER-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
@@ -20,11 +23,21 @@
 
     <main class="grid__container">
         <!--DOWLOAD-->
+        <div class="contDowloader" id="contDowloader">
+            <div class="cssload-wrap">
+                <div class="cssload-cssload-spinner">
+                   
+                </div>
+                <h2 class="loaderText"> Cargando..</h2>
+            </div>
+            
 
+        </div>
+        
 
         <!--START GRILLA-->
 
-        <div class="grid__header">
+        <div class="grid__header" id="header">
             <header class="contHeader">
                 <div class="contHeader__logo">
                     <img src="./images/logo.png" alt="logo" style="width:100%;height:100%;">
@@ -32,9 +45,17 @@
 
                 <ul class="contHeader__ul">
                     <li class="contHeader__li"><a href="#" class="contHeader__a"> Inicio  </a></li>
-                    <li class="contHeader__li"><a href="#" class="contHeader__a"> About <i class="arrow fa-solid fa-chevron-down"></i></a></li>
+                    
+                    <li class="contHeader__li">
+                        <a href="#" class="contHeader__a"> About <i class="arrow fa-solid fa-chevron-down" id="action"></i></a>
+                        <ul class="ul_action">
+                            <li class="li_action"><a href="#" class="a_action"> Item </a></li>
+                            <li class="li_action"><a href="#" class="a_action"> Item </a></li>
+                        </ul>
+                    </li>
+
                     <li class="contHeader__li"><a href="#" class="contHeader__a"> Services <i class="arrow fa-solid fa-chevron-down"></i></a></li>
-                    <li class="contHeader__li"><a href="#" class="contHeader__a"> Blog </a></li>
+                    
                     <li class="contHeader__li"><a href="#" class="contHeader__a"> Contact </a></li>
                 </ul>
 
@@ -110,7 +131,7 @@
                                     <p class="slide__description">Price: 100$</p>
                                 </div>
                                 <!--END CODIGO PERSONALIZADO-->
-                                
+
                             </div>
 
                             <div class="swiper-slide">
@@ -324,7 +345,13 @@
         <!--END GRILLA-->
 
         <!--BTN TOP-->
-        <div class="btnTop"></div>
+        <a href="#header">
+            <div class="btnTop" id="btnTop">
+                <!--ICONO BOXICONS-->
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADYAAAA2CAYAAACMRWrdAAAAAXNSR0IArs4c6QAAAe5JREFUaEPt2NtNQzEMBuC/G7BJGQEmoRvAKLABTFJGgE0YAVlKpChKju8RVOkLfTjHyWcnJukJN/o53agLG/bfKrsrtiv2RzKwl2JAIe5KjJ+AWGyIVRUj1LXM5hFAOm4FrKLuC+wLQDouG9aj6hJKx2XCZqgluCwYh0rHZcCkqFRcNEyLSsNFwqyoFFwUzIsKx0XApKjvMvszc2wI+VfghWlQDwX0CSAd54FpUfUYRe+l46wwK6quwnScBeZFLcFpYVGodJwW9g7gielq1P2oUfRXk/Z034aQLssPABf2IlYe0MK4SRyh2vsYtXQNbhZ36tTCKNAMx6HaGzTdx6Q4NYomaYGNcFJUzTAtUwnOhPLAWhx9n+0pWn61Uv2y4XCzuKJtZq1Y29Xo+6hRHKEklRvFFaG8FZsNQt1PguJwYsToQW/F+phaVBouEmZFpeCiYF5UOC4CJkXRyYE+3Mll1i1Ve84L06DqcUhyLHPjPDALqmY9HWeFeVBLcBZYBCodp4VFolJxWtgrgGemPanuTSWWZM+9AXiRtkYtjOIeTcKCklROHdcCm+HUgw+yP0qaKa4V1uNMg0+WVYszx/XAKo7+in+LEO4RwrniemHCea5/bMPW59w34q6YL3/r394VW59z34i7Yr78rX/7FxRhozetU9WTAAAAAElFTkSuQmCC"/>
+            </div>
+        </a>
+        
     </main>
 
 
@@ -337,6 +364,8 @@
 
     <!--PERSONALIZADO-->
     <script src="./js/templates/template_block.js"></script>
-    
+    <script src="./js/btnTop.js"></script>
+    <script src="./js/dowloader.js"></script>
+    <script src="./js/action.js"></script>
 </body>
 </html>

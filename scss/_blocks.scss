@@ -23,6 +23,7 @@
         align-items: flex-start;
         position: relative;
         border-radius: 3px;
+        transition: 0.2s linear;
         .contBlocks__title{
             color: $color_grey_fuerte;
             font-size: $font_size_subtitle;
@@ -71,4 +72,11 @@
             cursor: pointer;
         }
     }
+
+    .contBlocks__block:hover{
+        background: rgb(208,208,208);
+        background: linear-gradient(90deg, rgb(141, 141, 141) 0%, rgba(255,255,255,1) 50%, rgba(212,211,211,1) 100%, rgba(255,255,255,1) 100%);
+        transform: scale(1.03,1.03);
+        z-index: 1;
+     }
 }

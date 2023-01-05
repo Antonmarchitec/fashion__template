@@ -22,9 +22,9 @@ const dataFech = async () =>{
 
 
 const pintarTargets = (data) =>{
-    console.log(data)
+    //console.log(data)
     data.forEach(element => {
-        console.log(element)
+        //console.log(element)
         template_block.querySelector("#contBlocks__title").textContent = element.name
         template_block.querySelector("#text").textContent = element.description
         template_block.querySelector("#image").setAttribute("src", element.image)

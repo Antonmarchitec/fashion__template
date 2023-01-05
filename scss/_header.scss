@@ -1,20 +1,5 @@
 @import "variables";
 
-/**
-contHeader
-contHeader__logo
-contHeader__ul
-contHeader__li
-contHeader__a
-contHeader__boxes
-contHeader__box
-boxIcon
-contHeader__btn
-btnIcon
-
-*/
-
-
 .contHeader{
     width: 100%;
     padding: 10px 0px;
@@ -36,10 +21,13 @@ btnIcon
         justify-content: space-around;
         align-items: center;
         list-style: none;
+        background: yellow;
         .contHeader__li{
             width: 100px;
-            padding:5px;
+            padding:10px 0px;
             text-align: center;
+            background: teal;
+            position: relative;
             .contHeader__a{
                 text-decoration: none;
                 color: grey;
@@ -47,6 +35,29 @@ btnIcon
                 .arrow{
                     font-size: 15px;
                 }
+            }
+
+            .ul_action{
+                padding: 5px;
+                width: 100px;
+                background: rgb(52, 180, 26);
+                position: absolute;
+                left: 0;
+                top:35px;
+                opacity: 0;
+                transition: 0.5s all;
+                .li_action{
+                    list-style: none;
+                    background: violet;
+                    .a_action{
+                        text-decoration: none;
+                        color: yellow;
+                    }
+                }
+            }
+
+            .ul_action_JS{
+                opacity: 1;
             }
         }
     }
