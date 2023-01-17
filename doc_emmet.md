@@ -1,0 +1,3 @@
+- main > header                ingresa el elemento dentro dentro de un block padre
+- main > header > h1 + h2      ingresa varios elementos dentro de un padre  
+- main > header > ul > li.item * 5
