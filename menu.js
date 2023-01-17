@@ -7,8 +7,27 @@ btnMenu.addEventListener("click", () =>{
 })
 
 
+const submenuBtn = document.querySelectorAll(".submenu-btn")
+for(let i = 0; submenuBtn.length; i++){
+    submenuBtn[0].addEventListener("click", ()=>{
+        if(window.innerWidth < 720){
+            const submenu = this.nextElementSibling
+            const height = submenu.scrollHeight
+
+            if(submenu.classList.contains("desplegar")){
+                submenu.classList.remove("desplegar")
+                submenu.removeAttribute("style")
+            }else{
+                submenu.classList.add("desplegar")
+                submenu.style.height = height + "px"
+            }
+        }
+    })
+}
 
 
+
+/*
 const subMenuBtn = document.querySelectorAll(".submenu-btn")
 for (let i = 0 ; i < subMenuBtn.length; i++ ){
     subMenuBtn[i].addEventListener("click", ()=>{
@@ -26,4 +45,4 @@ for (let i = 0 ; i < subMenuBtn.length; i++ ){
         }
     })
 }
-
+*/

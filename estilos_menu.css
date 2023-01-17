@@ -51,12 +51,13 @@
     list-style: none;
     position: absolute;
     top: 59px;
-    left: 15px;
+    left: 5px;
     width: 200px;
     overflow: visible;
     z-index: 1000;
     opacity: 0;
     visibility: hidden;
+    transition: 0.1s ease;
 }
 
 .container-submenu:hover .submenu{
@@ -111,6 +112,7 @@
         margin-left: -100%;
         transition: 0.7s all;
         opacity: 0;
+        visibility: hidden;
     }
 
     .menu__item{
@@ -125,7 +127,7 @@
         text-decoration: none;
         background: rgb(50, 50, 50);
         transition: 0.1s all;
-    
+        
     }
     
     .menu .menu__link{
@@ -135,6 +137,7 @@
     .menu_JS{
         margin-left: 0;
         opacity: 1;
+        visibility: visible;
     }
     
     .container-submenu{
@@ -142,16 +145,22 @@
     }
     
     .container-submenu .submenu{
-        background: rgb(63, 63, 63);
-        position: absolute;
-        top: 0px;
-        left: 120px;
-        width:40%;
-        overflow: visible;
-        z-index: 1000;
+        position: initial;
+        top: initial;
+        left: initial;
+        width:initial;
+
+
+
+        margin-left: 20px;
         opacity: 0;
         visibility: hidden;
+        height: 0;
+        overflow: hidden;
+        transition: 0.5s all;
     }
+
+
     
     .container-submenu:hover .submenu{
         opacity: 1;
