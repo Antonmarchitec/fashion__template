@@ -15,6 +15,10 @@
     <!--FONT AWESON-->
     <script src="https://kit.fontawesome.com/b7fb745aab.js" crossorigin="anonymous"></script>
 
+    <!--AOS ANIMACIONES-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
 
     <title> FASHION TEMPLATE </title>
 </head>
@@ -98,10 +102,10 @@
         <div class="grid__banner">
             <div class="contBanner">
                 <div class="contBanner__boxLeft">
-                    <h1 class="contBanner__title"> MIX & MATCH </h1>
-                    <h2 class="contBanner__description"> Designer clothes</h2>
+                    <h1 class="contBanner__title" data-aos="fade-down"> MIX & MATCH </h1>
+                    <h2 class="contBanner__description" data-aos="fade-down"> Designer clothes</h2>
                     <hr class="contBanner__line">
-                    <button class="contBanner__btn" id="contBanner__btn"> READ MORE </button>
+                    <button class="contBanner__btn" id="contBanner__btn" data-aos="fade-down"> READ MORE </button>
                 </div>
 
                 <figure class="contBanner__boxRight">
@@ -119,11 +123,11 @@
 
         <div class="grid__sectionFashion">
             <section class="contSectionFashion">
-                <h2 class="contSectionFashion__title"> Fashion Collecction </h2>
-                <p class="contSectionFashion__parraf">
+                <h2 class="contSectionFashion__title" data-aos="fade-up"> Fashion Collecction </h2>
+                <p class="contSectionFashion__parraf" data-aos="fade-up">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam commodi eius eveniet sunt doloribus. Pariatur dicta, praesentium voluptatem libero ex non quam facilis perspiciatis quaerat qui odio quasi fugiat amet.
                 </p>
-                <button class="contSectionFashion__btn"> READ MORE </button>
+                <button class="contSectionFashion__btn" data-aos="fade-up"> READ MORE </button>
             </section>
         </div>
 
@@ -131,11 +135,11 @@
             <div class="contSectionCards">
                 <h2 class="contCards__title"> Trending Items </h2>
 
-                <div class="contCards">
+                <div class="contCards" data-aos="fade-up">
                     <!-- Swiper -->
                     <div class="swiper mySwiper">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide">
+                            <div class="swiper-slide" >
 
                                 <!--START CODIGO PERSONALIZADO-->
                                 <div class="cont__slide">
@@ -150,7 +154,7 @@
 
                             </div>
 
-                            <div class="swiper-slide">
+                            <div class="swiper-slide" >
                                 <div class="cont__slide">
                                     <figure class="slide__image">
                                     <img src="./images/fig2.png" alt="figura1" style="width:100%;height:100%;">
@@ -161,7 +165,7 @@
                                 </div>
                             </div>
 
-                            <div class="swiper-slide">
+                            <div class="swiper-slide" >
                                 <div class="cont__slide">
                                     <figure class="slide__image">
                                     <img src="./images/fig3.png" alt="figura1" style="width:100%;height:100%;">
@@ -172,7 +176,7 @@
                                 </div>
                             </div>
 
-                            <div class="swiper-slide">
+                            <div class="swiper-slide" >
                                 <div class="cont__slide">
                                     <figure class="slide__image">
                                     <img src="./images/fig4.png" alt="figura4" style="width:100%;height:100%;">
@@ -183,7 +187,7 @@
                                 </div>
                             </div>
 
-                            <div class="swiper-slide">
+                            <div class="swiper-slide" >
                                 <div class="cont__slide">
                                     <figure class="slide__image">
                                     <img src="./images/fig5.png" alt="figura5" style="width:100%;height:100%;">
@@ -194,7 +198,7 @@
                                 </div>
                             </div>
 
-                            <div class="swiper-slide">
+                            <div class="swiper-slide" >
                                 <div class="cont__slide">
                                     <figure class="slide__image">
                                     <img src="./images/fig6.png" alt="figura1" style="width:100%;height:100%;">
@@ -205,7 +209,7 @@
                                 </div>
                             </div>
 
-                            <div class="swiper-slide">
+                            <div class="swiper-slide" data-aos="fade-up">
                                 <div class="cont__slide">
                                     <figure class="slide__image">
                                     <img src="./images/fig7.png" alt="figura1" style="width:100%;height:100%;">
@@ -216,7 +220,7 @@
                                 </div>
                             </div>
 
-                            <div class="swiper-slide">
+                            <div class="swiper-slide" data-aos="fade-down">
                                 <div class="cont__slide">
                                     <figure class="slide__image">
                                     <img src="./images/fig8.png" alt="figura8" style="width:100%;height:100%;">
@@ -227,7 +231,7 @@
                                 </div>
                             </div>
 
-                            <div class="swiper-slide">
+                            <div class="swiper-slide" data-aos="fade-top">
                                 <div class="cont__slide">
                                     <figure class="slide__image">
                                     <img src="./images/fig9.png" alt="figura9" style="width:100%;height:100%;">
@@ -266,8 +270,8 @@
             </div>
 
             <!--TEMPLATE-->
-            <template id="contBlocks__template">
-                <div class="contBlocks__block">
+            <template id="contBlocks__template" >
+                <div class="contBlocks__block" data-aos="flip-up">
                     <h2 class="contBlocks__title" id="contBlocks__title"> Summer </h2>
 
                     <div class="contBlocks__contDesc"> 
@@ -285,7 +289,7 @@
         </div>
 
         <div class="grid__news">
-            <div class="contNews">
+            <div class="contNews" data-aos="fade-down">
                 <h2 class="contNews__title"> LATEST NEWS </h2>
 
                 <div class="contNews__block">
@@ -307,7 +311,7 @@
         </div>
 
         <div class="grid__designer">
-            <div class="contDesigner">
+            <div class="contDesigner" data-aos="fade-down">
                 <figure class="contDesigner__image">
                     <img src="./images/designer.jpg" alt="designer" style="width:100%;height:100%;">
                 </figure>
@@ -380,5 +384,34 @@
     <script src="./js/btnTop.js"></script>
     <script src="./js/dowloader.js"></script>
     <script src="./js/action.js"></script>
+
+    <!--AOS ANIMACIONES-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration:800
+
+            /*  ESTOS SON LOS ATRIBUTOS PARA MANEJAR AOS 
+            disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+            startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+            initClassName: 'aos-init', // class applied after initialization
+            animatedClassName: 'aos-animate', // class applied on animation
+            useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+            disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+            debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+            throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+            
+
+            // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+            offset: 120, // offset (in px) from the original trigger point
+            delay: 0, // values from 0 to 3000, with step 50ms
+            duration: 400, // values from 0 to 3000, with step 50ms
+            easing: 'ease', // default easing for AOS animations
+            once: false, // whether animation should happen only once - while scrolling down
+            mirror: false, // whether elements should animate out while scrolling past them
+            anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+            */
+        });
+      </script>
 </body>
 </html>

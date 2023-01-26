@@ -99,7 +99,7 @@ body::-webkit-scrollbar-thumb:hover {
   top: 0;
   right: 0;
   z-index: 10;
-  box-shadow: 0px 1px 5px black;
+  box-shadow: 0px 0px 2px rgb(180, 180, 180);
 }
 .contHeader .contHeader__logo {
   margin-left: 30px;
