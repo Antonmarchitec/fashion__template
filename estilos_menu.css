@@ -53,7 +53,7 @@
     top: 59px;
     left: 5px;
     width: 200px;
-    overflow: visible;
+    /*overflow: visible;*/
     z-index: 1000;
     opacity: 0;
     visibility: hidden;
@@ -90,7 +90,7 @@
         align-items: center;
 
     }
-    .fa-bars{
+    .nav-bar .fa-bars{
         color: rgb(9, 180, 14);
         font-size: 30px;
         cursor: pointer;
@@ -124,7 +124,6 @@
         display: block;
         color: white;
         padding: 20px;
-        text-decoration: none;
         background: rgb(50, 50, 50);
         transition: 0.1s all;
         
@@ -145,28 +144,14 @@
     }
     
     .container-submenu .submenu{
-        position: initial;
-        top: initial;
-        left: initial;
-        width:initial;
-
-
-
         margin-left: 20px;
-        opacity: 0;
-        visibility: hidden;
-        height: 0;
+        opacity: 1;
+        visibility: visible;
         overflow: hidden;
+        height: 0;
         transition: 0.5s all;
     }
 
-
-    
-    .container-submenu:hover .submenu{
-        opacity: 1;
-        visibility: visible;
-    }
-    
   
 }
 

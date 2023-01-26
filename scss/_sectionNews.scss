@@ -11,6 +11,7 @@
         text-align: center;
         color: $color_grey_fuerte;
         font-size: $font_size_subtitle;
+        font-weight: $fontWeight_madia;
     }
 
     .contNews__block{
@@ -30,6 +31,7 @@
             .contNews__boxRight__title{
                 color: $color_grey_fuerte;
                 font-size: 20px;
+                font-weight: $fontWeight_madia;
             }
             .contNews__description{
                 margin-top: 10px;

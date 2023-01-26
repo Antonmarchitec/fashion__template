@@ -4,7 +4,6 @@
     width: 100%;
     max-width: 1440px;
     //padding: 10px 0px;
-    //background: peru;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -21,13 +20,13 @@
     ;
 
     .grid__header{
+        height: 60px;
         padding: 10px 0px;
         background: white;
         grid-area: grid__header;
     }
 
     .grid__banner{
-        margin-top: 60px;
         padding: 10px 0px;
         background: white;
         grid-area: grid__banner;

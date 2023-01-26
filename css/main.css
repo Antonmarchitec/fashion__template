@@ -1,8 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Rakkas&family=Signika+Negative:wght@300;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 html {
@@ -39,12 +41,12 @@ body::-webkit-scrollbar-thumb:hover {
   grid-template-areas: "grid__header          grid__header          grid__header          grid__header" "grid__banner          grid__banner          grid__banner          grid__banner" "grid__sectionImage    grid__sectionImage    grid__sectionFashion  grid__sectionFashion" "grid__sectionCards    grid__sectionCards    grid__sectionCards    grid__sectionCards" "grid__blocks          grid__blocks          grid__blocks          grid__blocks" "grid__news            grid__news            grid__news            grid__designer" "grid__footer          grid__footer          grid__footer          grid__footer";
 }
 .grid__container .grid__header {
+  height: 60px;
   padding: 10px 0px;
   background: white;
   grid-area: grid__header;
 }
 .grid__container .grid__banner {
-  margin-top: 60px;
   padding: 10px 0px;
   background: white;
   grid-area: grid__banner;
@@ -87,6 +89,7 @@ body::-webkit-scrollbar-thumb:hover {
 .contHeader {
   width: 100%;
   background: rgb(221, 221, 221);
+  padding: 10px 0px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -104,7 +107,6 @@ body::-webkit-scrollbar-thumb:hover {
 }
 .contHeader .contHeader__ul {
   width: 500px;
-  padding: 23px 0px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -112,7 +114,7 @@ body::-webkit-scrollbar-thumb:hover {
   background: rgb(221, 221, 221);
 }
 .contHeader .contHeader__ul .contHeader__li {
-  width: 100px;
+  width: 150px;
   padding: 10px 0px;
   text-align: center;
   position: relative;
@@ -129,18 +131,17 @@ body::-webkit-scrollbar-thumb:hover {
 .contHeader .contHeader__ul .contHeader__li .ul_action {
   padding: 3px 0px;
   width: 100%;
-  position: absolute;
-  top: -100px;
-  left: 20px;
-  background: rgb(221, 221, 221);
-  z-index: -1;
-  opacity: 0;
   transition: 0.5s all;
-  background: yellow;
+  background: rgb(221, 221, 221);
+  position: absolute;
+  top: 35px;
+  left: 30px;
+  opacity: 0;
+  visibility: hidden;
 }
 .contHeader .contHeader__ul .contHeader__li .ul_action .li_action {
   list-style: none;
-  padding: 10px 5px;
+  padding: 10px 20px;
   margin: 2px;
   text-align: start;
 }
@@ -148,9 +149,15 @@ body::-webkit-scrollbar-thumb:hover {
   text-decoration: none;
   color: rgb(26, 26, 26);
 }
-.contHeader .contHeader__ul .contHeader__li .ul_actionJS {
-  top: 58px;
+.contHeader .contHeader__ul .contHeader__li .ul_action .li_action:hover {
+  background: rgb(61, 61, 61);
+}
+.contHeader .contHeader__ul .contHeader__li .ul_action .li_action:hover .a_action {
+  color: white;
+}
+.contHeader .contHeader__ul .contHeader__li:hover .ul_action {
   opacity: 1;
+  visibility: visible;
 }
 .contHeader .contHeader__boxes {
   width: 120px;
@@ -170,6 +177,10 @@ body::-webkit-scrollbar-thumb:hover {
 .contHeader .contHeader__boxes .contHeader__box .boxIcon {
   color: grey;
   font-size: 25px;
+}
+.contHeader .contHeader__boxes .contHeader__box .boxIcon:hover {
+  color: rgb(61, 61, 61);
+  cursor: pointer;
 }
 .contHeader .contHeader__btn {
   width: 35px;
@@ -201,8 +212,10 @@ body::-webkit-scrollbar-thumb:hover {
   color: rgb(0, 0, 0);
 }
 .contBanner .contBanner__boxLeft .contBanner__description {
+  margin-top: -20px;
   color: rgb(97, 97, 97);
   font-size: 60px;
+  font-weight: 800;
 }
 .contBanner .contBanner__boxLeft .contBanner__line {
   width: 80%;
@@ -271,6 +284,7 @@ subContSectionImage
 .contSectionFashion .contSectionFashion__title {
   color: rgb(61, 61, 61);
   font-size: 35px;
+  font-weight: 600;
 }
 .contSectionFashion .contSectionFashion__parraf {
   margin-top: 20px;
@@ -310,6 +324,7 @@ body .contSectionCards .contCards__title {
   color: rgb(61, 61, 61);
   margin-left: 60px;
   font-size: 35px;
+  font-weight: 600;
 }
 html .contSectionCards .contCards,
 body .contSectionCards .contCards {
@@ -357,6 +372,7 @@ body .contSectionCards .contCards .swiper .swiper-wrapper .swiper-slide .cont__s
   margin-top: 10px;
   color: rgb(61, 61, 61);
   font-size: 18px;
+  font-weight: 600;
 }
 html .contSectionCards .contCards .swiper .swiper-wrapper .swiper-slide .cont__slide .slide__description,
 body .contSectionCards .contCards .swiper .swiper-wrapper .swiper-slide .cont__slide .slide__description {
@@ -410,6 +426,7 @@ body .contSectionCards .contCards .swiper .swiper-button-prev {
   font-size: 35px;
   margin-left: 20px;
   z-index: 1;
+  font-weight: 600;
 }
 .contBlocks .contBlocks__block .contBlocks__contDesc {
   width: 130px;
@@ -467,6 +484,7 @@ body .contSectionCards .contCards .swiper .swiper-button-prev {
   text-align: center;
   color: rgb(61, 61, 61);
   font-size: 35px;
+  font-weight: 600;
 }
 .contNews .contNews__block {
   margin-top: 20px;
@@ -487,6 +505,7 @@ body .contSectionCards .contCards .swiper .swiper-button-prev {
 .contNews .contNews__block .contNews__boxRight .contNews__boxRight__title {
   color: rgb(61, 61, 61);
   font-size: 20px;
+  font-weight: 600;
 }
 .contNews .contNews__block .contNews__boxRight .contNews__description {
   margin-top: 10px;
@@ -524,6 +543,7 @@ body .contSectionCards .contCards .swiper .swiper-button-prev {
   color: rgb(61, 61, 61);
   font-size: 22px;
   line-height: 25px;
+  font-weight: 600;
 }
 .contDesigner .contDesigner__description {
   margin-top: 10px;

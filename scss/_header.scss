@@ -3,12 +3,12 @@
 .contHeader{
     width: 100%;
     background:$color_grey_claro;
-    //background: rgb(251, 121, 121);
+    padding: 10px 0px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
+    position: fixed;    
     left: 0;
     top: 0;
     right: 0;
@@ -21,14 +21,13 @@
 
     .contHeader__ul{
         width: 500px;
-        padding: 23px 0px;
         display: flex;
         justify-content: space-around;
         align-items: center;
         list-style: none;
         background: $color_grey_claro;
         .contHeader__li{
-            width: 100px;
+            width: 150px;
             padding:10px 0px;
             text-align: center;
             position: relative;
@@ -45,17 +44,16 @@
             .ul_action{
                 padding: 3px 0px;
                 width: 100%;
-                position:absolute;
-                top: -100px;
-                left: 20px;
-                background: $color_grey_claro;
-                z-index: -1;
-                opacity: 0;
                 transition: 0.5s all;
-                background: yellow;
+                background: $color_grey_claro;
+                position: absolute;
+                top: 35px;
+                left: 30px;
+                opacity: 0;
+                visibility: hidden;
                 .li_action{
                     list-style: none;
-                    padding: 10px 5px;
+                    padding: 10px 20px;
                     margin: 2px;
                     text-align: start;
                     .a_action{
@@ -63,10 +61,19 @@
                         color: rgb(26, 26, 26);
                     }
                 }
+                .li_action:hover{
+                    background: $color_grey_fuerte;
+                    .a_action{
+                        color: $color_white;
+                    }
+                }
             }
-            .ul_actionJS{
-               top: 58px;
-               opacity: 1;
+        }
+
+        .contHeader__li:hover{
+            .ul_action{
+                opacity: 1;
+                visibility: visible;
             }
         }
     }
@@ -87,6 +94,10 @@
             .boxIcon{
                 color: grey;
                 font-size: 25px;
+            }
+            .boxIcon:hover{
+                color: $color_grey_fuerte;
+                cursor:pointer;
             }
         }
     }
