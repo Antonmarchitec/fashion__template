@@ -1,5 +1,7 @@
 @import "variables";
 
+
+
 .contHeader{
     width: 100%;
     background:$color_grey_claro;
@@ -104,13 +106,175 @@
     }
 
     .contHeader__btn{
-        width: 35px;
-        height: 35px;
-        background: brown;
-        margin-right: 20px;
         display: none;
     }
 }
 
 
 
+/********************************************
+********************
+********************/
+
+@media (min-width:320px) and (max-width:899px){
+    .contHeader{
+        width: 100%;
+        background:$color_grey_claro;
+        padding: 10px 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        .contHeader__logo{
+            margin-left: 30px;
+            width: 60px;
+            height: 60px;
+        }
+    
+
+        .contHeader__ul{
+        
+            /**/
+            width: 250px;
+            position: absolute;
+            top: 80px;
+            right: -100%;    /*JS*/
+            background: $color_grey_claro;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            list-style: none;
+            transition: 0.2s ease-in all;
+            .contHeader__li{
+                padding:10px 0px;
+                text-align: center;
+                position: relative;
+                background-color: $color_grey_claro;
+
+                /***/
+                width: 100%;
+                .contHeader__a{
+                    text-decoration: none;
+                    color: rgb(114, 114, 114);
+                    font-weight: 600;
+                    .arrow{
+                        font-size: 15px;
+                    }
+                }
+    
+                .ul_action{
+                    padding: 3px 0px;
+                    width: 120px;
+                    transition: 0.5s all;
+                    position: absolute;
+                    top: 35px;
+                    opacity: 0;
+                    visibility: hidden;
+
+
+                    /**/
+                    background: $color_grey_tenue;
+                    left: initial;
+                    right: 180px;
+                    z-index: 100;
+
+                    .li_action{
+                        list-style: none;
+                        padding: 10px 20px;
+                        margin: 2px;
+                        text-align: start;
+                        .a_action{
+
+                            /**/
+                            color: $color_white;
+                            font-weight: 600;
+                        }
+                    }
+                    .li_action:hover{
+                        background: $color_grey_fuerte;
+                        .a_action{
+                            color: $color_white;
+                        }
+                    }
+                }
+            }
+    
+            .contHeader__li:hover{
+                background: $color_grey_tenue;
+                color: $color_white;
+                .contHeader__a{
+                    text-decoration: none;
+                    color: rgb(114, 114, 114);
+                    .arrow{
+                        font-size: 15px;
+                    }
+                }
+                .contHeader__a{
+                    color: $color_white;
+                    .arrow{
+                        font-size: 15px;
+                    }
+                }
+                .ul_action{
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+        }
+        .contHeader__ul_js{
+            right: 0;    /*JS*/
+        }
+
+
+        .contHeader__boxes{
+            width: 120px;
+            padding: 5px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-right: 30px;
+
+            /**/
+            /**/
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: none;
+            .contHeader__box{
+                width: 32px;
+                height: 32px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .boxIcon{
+                    color: grey;
+                    font-size: 25px;
+                }
+                .boxIcon:hover{
+                    color: $color_grey_fuerte;
+                    cursor:pointer;
+                }
+            }
+        }
+    
+
+        .contHeader__btn{
+            width: 40px;
+            height: 40px;
+            margin-right: 20px;
+            display: block;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            .btnIcon{
+                cursor:pointer;
+            }
+        }
+    } 
+}   

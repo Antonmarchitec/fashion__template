@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
 
-    <!--PERSONALIZADO-->
+    <!--PERSONALIZADO
     <link rel="stylesheet" href="./css/dowloader.css">
+    -->
     
     <!--CDN SWIPER-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
@@ -49,7 +50,7 @@
                 </div>
 
                 <!--BLOCK NAVIGATION-->
-                <ul class="contHeader__ul">
+                <ul class="contHeader__ul" id="contHeader__ul">
                     <li class="contHeader__li"><a href="#" class="contHeader__a"> Home  </a></li>
                     
                     <li class="contHeader__li"><a href="#" class="contHeader__a"> About </a></li>
@@ -93,8 +94,8 @@
                 </div>
 
                 <!--BLOCK BTN-->
-                <div class="contHeader__btn">
-                    <i class="btnIcon fa-solid fa-bars-sort"></i>
+                <div class="contHeader__btn" >
+                    <i class="btnIcon fa-solid fa-bars" id="contHeader__btn"></i>
                 </div>
             </header>
         </div>
@@ -109,6 +110,7 @@
                 </div>
 
                 <figure class="contBanner__boxRight">
+                    
                 </figure>
             </div>
         </div>
@@ -412,6 +414,6 @@
             anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
             */
         });
-      </script>
+    </script>
 </body>
 </html>
