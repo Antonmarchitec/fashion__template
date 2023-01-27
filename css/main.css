@@ -35,9 +35,11 @@ body::-webkit-scrollbar-thumb:hover {
   width: 100%;
   max-width: 1440px;
   margin: auto;
+  background: brown;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
+  gap: 1em;
   grid-template-areas: "grid__header          grid__header          grid__header          grid__header" "grid__banner          grid__banner          grid__banner          grid__banner" "grid__sectionImage    grid__sectionImage    grid__sectionFashion  grid__sectionFashion" "grid__sectionCards    grid__sectionCards    grid__sectionCards    grid__sectionCards" "grid__blocks          grid__blocks          grid__blocks          grid__blocks" "grid__news            grid__news            grid__news            grid__designer" "grid__footer          grid__footer          grid__footer          grid__footer";
 }
 .grid__container .grid__header {
@@ -452,15 +454,6 @@ body::-webkit-scrollbar-thumb:hover {
     right: 20px;
   }
 }
-/*
-RESPONSIVE DESING OFICIAL NUEVO
-@media (min-width:1025px) and (max-width:1200px){}     175px
-@media (min-width:900px)  and (max-width:1024px){}     124px
-@media (min-width:770px)  and (max-width:899px){}      129px
-@media (min-width:641px)  and (max-width:769px){}      128px
-@media (min-width:481px)  and (max-width:640px){}      159px
-@media (min-width:320px)  and (max-width:480px){}      160px
-*/
 @media (min-width: 900px) and (max-width: 1024px) {
   .contBanner {
     width: 100%;
@@ -516,6 +509,243 @@ RESPONSIVE DESING OFICIAL NUEVO
     position: absolute;
     top: 60px;
     right: 30px;
+  }
+}
+@media (min-width: 770px) and (max-width: 899px) {
+  .contBanner {
+    width: 100%;
+    height: 500px;
+    padding: 10px 0px;
+    background: white;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .contBanner .contBanner__boxLeft {
+    width: 60%;
+    padding: 10px 0px;
+    margin-left: 30px;
+    z-index: 1;
+  }
+  .contBanner .contBanner__boxLeft .contBanner__title {
+    font-size: 60px;
+    font-family: "Rakkas", cursive;
+    color: rgb(0, 0, 0);
+  }
+  .contBanner .contBanner__boxLeft .contBanner__description {
+    margin-top: -10px;
+    color: rgb(97, 97, 97);
+    font-size: 30px;
+    font-weight: 800;
+  }
+  .contBanner .contBanner__boxLeft .contBanner__line {
+    width: 80%;
+    margin-top: 20px;
+    height: 1px;
+    border: none;
+    background: rgb(97, 97, 97);
+  }
+  .contBanner .contBanner__boxLeft .contBanner__btn {
+    margin-top: 40px;
+    width: 200px;
+    padding: 10px;
+    border: 2px solid transparent;
+    background: rgb(20, 17, 57);
+    color: white;
+    cursor: pointer;
+  }
+  .contBanner .contBanner__boxLeft .contBanner__btn:hover {
+    background: rgb(46, 39, 125);
+  }
+  .contBanner .contBanner__boxRight {
+    width: 400px;
+    height: 400px;
+    background: url(../images/img_men.png);
+    background-size: 100% 100%;
+    position: absolute;
+    top: 60px;
+    right: 30px;
+  }
+}
+@media (min-width: 641px) and (max-width: 769px) {
+  .contBanner {
+    width: 100%;
+    height: 500px;
+    padding: 10px 0px;
+    background: white;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .contBanner .contBanner__boxLeft {
+    width: 80%;
+    padding: 10px 0px;
+    margin-left: 30px;
+    z-index: 1;
+  }
+  .contBanner .contBanner__boxLeft .contBanner__title {
+    font-size: 55px;
+    font-family: "Rakkas", cursive;
+    color: rgb(0, 0, 0);
+  }
+  .contBanner .contBanner__boxLeft .contBanner__description {
+    margin-top: -10px;
+    color: rgb(97, 97, 97);
+    font-size: 30px;
+    font-weight: 800;
+  }
+  .contBanner .contBanner__boxLeft .contBanner__line {
+    width: 80%;
+    margin-top: 20px;
+    height: 1px;
+    border: none;
+    background: rgb(97, 97, 97);
+  }
+  .contBanner .contBanner__boxLeft .contBanner__btn {
+    margin-top: 40px;
+    width: 200px;
+    padding: 10px;
+    border: 2px solid transparent;
+    background: rgb(20, 17, 57);
+    color: white;
+    cursor: pointer;
+  }
+  .contBanner .contBanner__boxLeft .contBanner__btn:hover {
+    background: rgb(46, 39, 125);
+  }
+  .contBanner .contBanner__boxRight {
+    width: 350px;
+    height: 350px;
+    background: url(../images/img_men.png);
+    background-size: 100% 100%;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+  }
+}
+@media (min-width: 481px) and (max-width: 640px) {
+  .contBanner {
+    width: 100%;
+    height: initial;
+    padding: 10px 10px;
+    background: white;
+    position: initial;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .contBanner .contBanner__boxLeft {
+    width: 100%;
+    padding: 10px 0px;
+    margin-left: initial;
+    z-index: 1;
+  }
+  .contBanner .contBanner__boxLeft .contBanner__title {
+    font-size: 70px;
+    font-family: "Rakkas", cursive;
+    color: rgb(0, 0, 0);
+  }
+  .contBanner .contBanner__boxLeft .contBanner__description {
+    margin-top: -15px;
+    color: rgb(97, 97, 97);
+    font-size: 30px;
+    font-weight: 800;
+  }
+  .contBanner .contBanner__boxLeft .contBanner__line {
+    width: 80%;
+    margin-top: 20px;
+    height: 1px;
+    border: none;
+    background: rgb(97, 97, 97);
+  }
+  .contBanner .contBanner__boxLeft .contBanner__btn {
+    margin-top: 40px;
+    width: 200px;
+    padding: 10px;
+    border: 2px solid transparent;
+    background: rgb(20, 17, 57);
+    color: white;
+    cursor: pointer;
+  }
+  .contBanner .contBanner__boxLeft .contBanner__btn:hover {
+    background: rgb(46, 39, 125);
+  }
+  .contBanner .contBanner__boxRight {
+    width: 75%;
+    height: 75%;
+    position: initial;
+    top: initial;
+    right: initial;
+  }
+}
+/*
+RESPONSIVE DESING OFICIAL NUEVO
+@media (min-width:1025px) and (max-width:1200px){}     175px
+@media (min-width:900px)  and (max-width:1024px){}     124px
+@media (min-width:770px)  and (max-width:899px){}      129px
+@media (min-width:641px)  and (max-width:769px){}      128px
+@media (min-width:481px)  and (max-width:640px){}      159px
+@media (min-width:320px)  and (max-width:480px){}      160px
+*/
+@media (min-width: 320px) and (max-width: 480px) {
+  .contBanner {
+    width: 100%;
+    height: initial;
+    padding: 30px 10px;
+    background: white;
+    position: initial;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .contBanner .contBanner__boxLeft {
+    width: 100%;
+    padding: 20px 0px;
+    margin-left: initial;
+    z-index: 1;
+  }
+  .contBanner .contBanner__boxLeft .contBanner__title {
+    width: 50%;
+    font-size: 85px;
+    font-family: "Rakkas", cursive;
+    color: rgb(0, 0, 0);
+    line-height: 75px;
+  }
+  .contBanner .contBanner__boxLeft .contBanner__description {
+    margin-top: 10px;
+    color: rgb(97, 97, 97);
+    font-size: 30px;
+    font-weight: 800;
+  }
+  .contBanner .contBanner__boxLeft .contBanner__line {
+    width: 80%;
+    margin-top: 20px;
+    height: 1px;
+    border: none;
+    background: rgb(97, 97, 97);
+  }
+  .contBanner .contBanner__boxLeft .contBanner__btn {
+    margin-top: 40px;
+    width: 200px;
+    padding: 10px;
+    border: 2px solid transparent;
+    background: rgb(20, 17, 57);
+    color: white;
+    cursor: pointer;
+  }
+  .contBanner .contBanner__boxLeft .contBanner__btn:hover {
+    background: rgb(46, 39, 125);
+  }
+  .contBanner .contBanner__boxRight {
+    width: 95%;
+    height: 95%;
+    position: initial;
+    top: initial;
+    right: initial;
   }
 }
 /**

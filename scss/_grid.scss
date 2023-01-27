@@ -6,10 +6,11 @@
     //padding: 10px 0px;
     margin: auto;
     //overflow: hidden;
+    background: brown;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
-    //gap: 1em;
+    gap: 1em;
     grid-template-areas: 
         "grid__header          grid__header          grid__header          grid__header"
         "grid__banner          grid__banner          grid__banner          grid__banner"
