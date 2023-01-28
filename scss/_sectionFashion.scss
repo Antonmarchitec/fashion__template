@@ -29,3 +29,49 @@
         background: $color_grey_tenue;
     }
 }
+
+
+
+/***********************************
+*******************
+************************************/
+@media (min-width:770px) and (max-width:899px){
+    .contSectionFashion{
+        width: 100%;
+        .contSectionFashion__title{
+            line-height: 40px;
+        }
+    }
+}
+
+/***********************************
+*******************
+************************************/
+@media (min-width:500px)  and (max-width:769px){
+    .contSectionFashion{
+        margin-top: 0;
+        width: 100%;
+        .contSectionFashion__title{
+            line-height: 40px;
+            line-height: 35px;
+        }
+    }
+}
+
+/***********************************
+*******************
+************************************/
+@media (min-width:320px)  and (max-width:499px){
+    .contSectionFashion{
+        margin-top: 0;
+        width: 100%;
+        .contSectionFashion__title{
+            line-height: 40px;
+            line-height: 35px;
+        }
+    }
+}
+
+
+
+

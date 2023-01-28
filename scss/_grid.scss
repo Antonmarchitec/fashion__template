@@ -76,3 +76,49 @@
         grid-area: grid__footer;
     }
 }
+
+
+
+@media (min-width:500px) and (max-width:769px){
+    .grid__container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 1em;
+        grid-template-areas: 
+            "grid__header            grid__header"
+            "grid__banner            grid__banner"
+            "grid__sectionImage      grid__sectionFashion"
+            "grid__sectionCards      grid__sectionCards"
+            "grid__blocks            grid__blocks"
+            "grid__news              grid__news"
+            "grid__designer          grid__designer"
+            "grid__footer            grid__footer";
+    }
+}
+
+
+
+
+/*******************************
+**********************************
+************************/
+@media (min-width:320px) and (max-width:499px){
+    .grid__container{
+        display: grid;
+        background: orange;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 1em;
+        grid-template-areas: 
+            "grid__header            grid__header"
+            "grid__banner            grid__banner"
+            "grid__sectionFashion    grid__sectionFashion"
+            "grid__sectionImage      grid__sectionImage"
+            "grid__sectionCards      grid__sectionCards"
+            "grid__blocks            grid__blocks"
+            "grid__news              grid__news"
+            "grid__designer          grid__designer"
+            "grid__footer            grid__footer";
+    }
+}

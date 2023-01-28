@@ -1,10 +1,5 @@
 @import "variables";
 
-/**
-contSectionImage
-subContSectionImage
-*/
-
 .contSectionImage{
     width: 400px;
     height: 250px;
@@ -31,4 +26,92 @@ subContSectionImage
         }
     }
     
+}
+
+
+
+
+/***********************************
+*******************
+************************************/
+@media (min-width:770px) and (max-width:899px){
+    .contSectionImage{
+        width: 300px;
+        height: 250px;
+        margin:100px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        background:$color_blue;
+        .subContSectionImage{
+            width: 300px;
+            height: 250px;
+            margin-top: -40px;
+            margin-left: -40px;
+            transition: 0.5s all;
+        }
+        &:hover{
+            .subContSectionImage{
+                width: 300px;
+                height: 250px;
+                margin-top: -50px;
+                margin-left: -50px;
+                transition: 0.5s all;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+/***********************************
+*******************
+************************************/
+@media (min-width:500px) and (max-width:769px){
+    .contSectionImage{
+        margin: 50px auto;
+        width: 80%;
+        .subContSectionImage{
+            width: 100%;
+            margin-top: -30px;
+            margin-left: -30px;
+        }
+        &:hover{
+            .subContSectionImage{
+                width: 100%;
+                margin-top: -50px;
+                margin-left: -50px;
+            }
+        }
+    }
+}
+
+
+
+
+
+/***********************************
+*******************
+************************************/
+@media (min-width:320px) and (max-width:499px){
+    .contSectionImage{
+        margin: 20px auto;
+        width: 80%;
+        .subContSectionImage{
+            width: 100%;
+            margin-top: -30px;
+            margin-left: -30px;
+        }
+        &:hover{
+            .subContSectionImage{
+                width: 100%;
+                margin-top: -50px;
+                margin-left: -50px;
+            }
+        }
+    }
 }
