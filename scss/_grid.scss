@@ -1,5 +1,17 @@
 @import "variables";
 
+/*
+RESPONSIVE DESING OFICIAL NUEVO
+@media (min-width:1025px) and (max-width:1200px){}     175px
+@media (min-width:900px)  and (max-width:1024px){}     124px
+@media (min-width:770px)  and (max-width:899px){}      129px
+@media (min-width:641px)  and (max-width:769px){}      128px
+@media (min-width:481px)  and (max-width:640px){}      159px
+@media (min-width:320px)  and (max-width:480px){}      160px
+*/
+
+
+
 .grid__container{
     width: 100%;
     max-width: 1440px;
@@ -78,13 +90,14 @@
 }
 
 
-
+/*******************************
+**********************************
+************************/
 @media (min-width:500px) and (max-width:769px){
     .grid__container{
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
-        gap: 1em;
         grid-template-areas: 
             "grid__header            grid__header"
             "grid__banner            grid__banner"
@@ -106,10 +119,8 @@
 @media (min-width:320px) and (max-width:499px){
     .grid__container{
         display: grid;
-        background: orange;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
-        gap: 1em;
         grid-template-areas: 
             "grid__header            grid__header"
             "grid__banner            grid__banner"

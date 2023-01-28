@@ -13,6 +13,7 @@ html,
         .contSectionCards{
             width: 100%;
             padding: 10px 0px;
+
             .contCards__title{
                 color:$color_grey_fuerte;
                 margin-left: 60px;
@@ -24,12 +25,12 @@ html,
                 width: 90%;
                 height: 380px;
                 margin: 10px auto;
-        
                 //BLOCK SWIPER
                 .swiper {
                     margin-top: 20px;
                     width: 100%;
                     height: 100%;
+
                     .swiper-wrapper{
                         background:transparent;
                         .swiper-slide {
@@ -46,9 +47,8 @@ html,
                                 padding: 10px 0px;
                                 border: 2px solid transparent;
                                 transition: 0.5s linear;
-                                overflow: hidden;
                                 .slide__image{
-                                    width: 10   0%;
+                                    width: 100%;
                                     height: 280px;
                                     padding: 20px 10px;
                                     transition: 0.5s all 0.2s;
@@ -95,7 +95,98 @@ html,
       }
 
 
+   
       
+@media (min-width:320px) and (max-width:423px){
+    body {
+
+        .contSectionCards{
+            width: 100%;
+            padding: 40px 0px;
+
+            .contCards__title{
+                color:$color_grey_fuerte;
+                margin-left: 20px;
+                font-size: $font_size_subtitle;
+                font-weight: $fontWeight_madia;
+            }
+    
+            .contCards{
+                width: 90%;
+                height: initial;
+                margin: 10px auto;
+                //background: black;
+                //padding: 3px 0px;
+
+
+                //BLOCK SWIPER
+                .swiper {     //CONTENEDOR/////////////
+                    margin-top: initial;
+                    width: 100%;
+                    height: initial;
+                    //background: yellow;
+                    //padding: initial;
+                    .swiper-wrapper{   //CONTENEDOR/////////////
+                        //background:teal;
+                        height: initial;
+                        //padding: 3px 0px;
+                        .swiper-slide {  //CONTENEDOR/////////////
+                            text-align: center;
+                            font-size: 18px;
+                            background: $color_grey_claro;
+                            border: 2px solid $color_grey_claro;
+                            border-radius: 10px;
+                            overflow: hidden;
+                            //background: violet;
+                            //padding: 3px 0px;
+
+                            //START CODIGO PERSONALIZADO
+                            .cont__slide{   //CONTENEDOR/////////////
+                                width: 100%;
+                                height: initial;
+                                padding: 30px 0px;
+                                border: 2px solid transparent;
+                                transition: 0.5s linear;
+                                .slide__image{
+                                    width: 90%;
+                                    margin: auto;
+                                    height: initial;
+                                    padding: 0px 10px;
+                                    transition: 0.5s all 0.2s;
+                                }
+                                .slide__name{
+                                    margin-top: 15px;
+                                    color: $color_grey_fuerte;
+                                    font-size: 18px;
+                                    font-weight: $fontWeight_madia;
+                                }
+                                .slide__description{
+                                    color: $color_grey_tenue;
+                                }
+                            }
+                            //END CODIGO PERSONALIZADO
+                            
+                        }
+                    }
+    
+    
+    
+    
+    
+    
+                    .swiper-button-next{
+                        color:rgb(20, 17, 57) ;
+                    }
+    
+                    .swiper-button-prev{
+                        color:rgb(20, 17, 57) ;
+                    }
+                }
+            }
+        }
+      }
+}
+
 
       
 
