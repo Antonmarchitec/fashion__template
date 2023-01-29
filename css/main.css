@@ -105,6 +105,7 @@ RESPONSIVE DESING OFICIAL NUEVO
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
+    background: teal;
     grid-template-areas: "grid__header            grid__header" "grid__banner            grid__banner" "grid__sectionImage      grid__sectionFashion" "grid__sectionCards      grid__sectionCards" "grid__blocks            grid__blocks" "grid__news              grid__news" "grid__designer          grid__designer" "grid__footer            grid__footer";
   }
 }

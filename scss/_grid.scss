@@ -98,6 +98,7 @@ RESPONSIVE DESING OFICIAL NUEVO
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
+        background: teal;
         grid-template-areas: 
             "grid__header            grid__header"
             "grid__banner            grid__banner"
