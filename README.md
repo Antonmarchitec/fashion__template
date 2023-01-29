@@ -19,9 +19,9 @@
 Página informativa desarrollada para negocios de diseño de modas, cuenta con un menú de navegación, banner principal, imágenes, secciones, slader de productos con sensibilidad touch screen, es adaptable a dispositivos de escritorio (Desktop), tablet y móvil.
 
 ## Diseño responsivo:
-Desktop: 1440px
-Tablet: 720px
-Móvil: 320px
+- Desktop: 1440px
+- Tablet: 720px
+- Móvil: 320px
 
 ## Vista previa:
 https://antonmarchitec.github.io/fashion__template/
