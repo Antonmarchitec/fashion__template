@@ -1,14 +1,5 @@
 @import "variables";
 
-/*
-RESPONSIVE DESING OFICIAL NUEVO
-@media (min-width:1025px) and (max-width:1200px){}     175px
-@media (min-width:900px)  and (max-width:1024px){}     124px
-@media (min-width:770px)  and (max-width:899px){}      129px
-@media (min-width:641px)  and (max-width:769px){}      128px
-@media (min-width:481px)  and (max-width:640px){}      159px
-@media (min-width:320px)  and (max-width:480px){}      160px
-*/
 
 
 
@@ -18,11 +9,9 @@ RESPONSIVE DESING OFICIAL NUEVO
     //padding: 10px 0px;
     margin: auto;
     //overflow: hidden;
-    background: brown;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
-    gap: 1em;
     grid-template-areas: 
         "grid__header          grid__header          grid__header          grid__header"
         "grid__banner          grid__banner          grid__banner          grid__banner"
@@ -35,55 +24,46 @@ RESPONSIVE DESING OFICIAL NUEVO
 
     .grid__header{
         height: 60px;
-        padding: 10px 0px;
         background: white;
         grid-area: grid__header;
     }
 
     .grid__banner{
-        padding: 10px 0px;
         background: white;
         grid-area: grid__banner;
     }
 
     .grid__sectionImage{
-        padding: 10px 0px;
         background: white;
         grid-area: grid__sectionImage;
     }
 
     .grid__sectionFashion{
-        padding: 10px 0px;
         background: white;
         grid-area: grid__sectionFashion;
     }
 
     .grid__sectionCards{
-        padding: 10px 0px;
         background: rgb(255, 255, 255);
         grid-area: grid__sectionCards;  
     }
 
     .grid__blocks{
-        padding: 10px 0px;
         background: rgb(255, 255, 255);
         grid-area: grid__blocks;
     }
 
     .grid__news{
-        padding: 10px 0px;
         background: rgb(255, 255, 255);
         grid-area: grid__news;
     }
 
     .grid__designer{
-        padding: 10px 0px;
         background: rgb(255, 255, 255);
         grid-area: grid__designer;
     }
 
     .grid__footer{
-        //padding: 10px 0px;
         background: rgb(255, 255, 255);
         grid-area: grid__footer;
     }
@@ -105,7 +85,6 @@ RESPONSIVE DESING OFICIAL NUEVO
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
-        background: teal;
         grid-template-areas: 
             "grid__header            grid__header"
             "grid__banner            grid__banner"
@@ -129,7 +108,6 @@ RESPONSIVE DESING OFICIAL NUEVO
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
-        background: violet;
         grid-template-areas: 
             "grid__header            grid__header"
             "grid__banner            grid__banner"
@@ -140,5 +118,9 @@ RESPONSIVE DESING OFICIAL NUEVO
             "grid__news              grid__news"
             "grid__designer          grid__designer"
             "grid__footer            grid__footer";
+
     }
 }
+
+
+

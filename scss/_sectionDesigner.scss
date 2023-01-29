@@ -66,3 +66,41 @@
         }
     }
 }
+
+
+
+
+
+
+
+
+/****************************************
+**************************************
+***************************************/
+@media (min-width:320px) and (max-width:1024px){
+    .contDesigner{
+        margin: 10px auto;
+        width:90%;
+        height: initial;
+        padding: 30px;
+        text-align: center;
+        .contDesigner__image{
+            width: 100px;
+            height: 100px;
+            margin: auto;
+        }
+    
+        .contDesigner__title{
+            margin-top: 10px;
+            color: $color_grey_fuerte;
+            font-size: 22px; 
+            line-height: 25px;
+            font-weight: $fontWeight_madia;
+        }
+    
+        .contDesigner__description{
+            margin-top: 10px;
+            color: $color_grey_tenue;
+        }
+    }
+}

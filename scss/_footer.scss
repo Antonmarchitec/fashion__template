@@ -14,24 +14,34 @@
         justify-content: space-between;
         align-items: flex-start;
         .contFooter__image{
-            width: 50px;
-            height: 50px;
+            width: 55px;
+            height: 55px;
+            background-image: url(../images/logo_white.png);
+            background-size: 100% 100%;
         }
 
-        .contfooter{
-            width: 200px;
-            .footer__li{
-                list-style: none;
-                .footer__a{
-                    text-decoration: none;
-                    color: $color_grey_claro;
-                }
-                .footer__a:hover{
-                    color: $color_grey_tenue;
-                    font-weight: 600;
+        .cont__block{
+            width: 500px;
+            padding: 10px 0px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            .cont__list{
+                width: 100px;
+                .cont__item{
+                    list-style: none;
+                    .cont__link{
+                        text-decoration: none;
+                        color: $color_grey_claro;
+                    }
+                    .cont__link:hover{
+                        color: $color_grey_tenue;
+                        font-weight: 600;
+                    }
                 }
             }
         }
+        
     }
 
     .footerLine{
@@ -52,4 +62,69 @@
     }
 
     
+}
+
+
+
+
+
+
+/********************************************
+*************************************
+********************************************/
+@media (min-width:320px)  and (max-width:640px){
+    .contFooter{
+        margin-top: 10px;
+        width: 100%;
+        padding: 10px 0px;
+            .blockFooter{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            .contFooter__image{
+                width: 70px;
+                height: 70px;
+                
+            }
+    
+            .cont__block{
+                width: 100%;
+                padding: 30px 0px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                    .cont__list{
+                    width: 70px;
+                        .cont__item{
+                        list-style: none;
+                        .cont__link{
+                            text-decoration: none;
+                        }
+                        .cont__link:hover{
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+            
+        }
+    
+        .footerLine{
+            width: 80%;
+            height: 1.5px;
+            margin: 10px auto;
+        }
+    
+        .blockPie{
+            width: 100%;
+            padding: 5px 0px;
+            .pie__copyRight{
+                text-align: center;
+            }
+        }
+    
+        
+    }
 }

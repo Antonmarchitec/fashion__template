@@ -31,64 +31,45 @@ body::-webkit-scrollbar-thumb:hover {
   height: 150px;
 }
 
-/*
-RESPONSIVE DESING OFICIAL NUEVO
-@media (min-width:1025px) and (max-width:1200px){}     175px
-@media (min-width:900px)  and (max-width:1024px){}     124px
-@media (min-width:770px)  and (max-width:899px){}      129px
-@media (min-width:641px)  and (max-width:769px){}      128px
-@media (min-width:481px)  and (max-width:640px){}      159px
-@media (min-width:320px)  and (max-width:480px){}      160px
-*/
 .grid__container {
   width: 100%;
   max-width: 1440px;
   margin: auto;
-  background: brown;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
-  gap: 1em;
   grid-template-areas: "grid__header          grid__header          grid__header          grid__header" "grid__banner          grid__banner          grid__banner          grid__banner" "grid__sectionImage    grid__sectionImage    grid__sectionFashion  grid__sectionFashion" "grid__sectionCards    grid__sectionCards    grid__sectionCards    grid__sectionCards" "grid__blocks          grid__blocks          grid__blocks          grid__blocks" "grid__news            grid__news            grid__news            grid__designer" "grid__footer          grid__footer          grid__footer          grid__footer";
 }
 .grid__container .grid__header {
   height: 60px;
-  padding: 10px 0px;
   background: white;
   grid-area: grid__header;
 }
 .grid__container .grid__banner {
-  padding: 10px 0px;
   background: white;
   grid-area: grid__banner;
 }
 .grid__container .grid__sectionImage {
-  padding: 10px 0px;
   background: white;
   grid-area: grid__sectionImage;
 }
 .grid__container .grid__sectionFashion {
-  padding: 10px 0px;
   background: white;
   grid-area: grid__sectionFashion;
 }
 .grid__container .grid__sectionCards {
-  padding: 10px 0px;
   background: rgb(255, 255, 255);
   grid-area: grid__sectionCards;
 }
 .grid__container .grid__blocks {
-  padding: 10px 0px;
   background: rgb(255, 255, 255);
   grid-area: grid__blocks;
 }
 .grid__container .grid__news {
-  padding: 10px 0px;
   background: rgb(255, 255, 255);
   grid-area: grid__news;
 }
 .grid__container .grid__designer {
-  padding: 10px 0px;
   background: rgb(255, 255, 255);
   grid-area: grid__designer;
 }
@@ -105,7 +86,6 @@ RESPONSIVE DESING OFICIAL NUEVO
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    background: teal;
     grid-template-areas: "grid__header            grid__header" "grid__banner            grid__banner" "grid__sectionImage      grid__sectionFashion" "grid__sectionCards      grid__sectionCards" "grid__blocks            grid__blocks" "grid__news              grid__news" "grid__designer          grid__designer" "grid__footer            grid__footer";
   }
 }
@@ -117,7 +97,6 @@ RESPONSIVE DESING OFICIAL NUEVO
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    background: violet;
     grid-template-areas: "grid__header            grid__header" "grid__banner            grid__banner" "grid__sectionFashion    grid__sectionFashion" "grid__sectionImage      grid__sectionImage" "grid__sectionCards      grid__sectionCards" "grid__blocks            grid__blocks" "grid__news              grid__news" "grid__designer          grid__designer" "grid__footer            grid__footer";
   }
 }
@@ -138,8 +117,10 @@ RESPONSIVE DESING OFICIAL NUEVO
 }
 .contHeader .contHeader__logo {
   margin-left: 30px;
-  width: 60px;
-  height: 60px;
+  width: 55px;
+  height: 55px;
+  background-image: url(../images/logo_black.png);
+  background-size: 100% 100%;
 }
 .contHeader .contHeader__ul {
   width: 500px;
@@ -186,7 +167,7 @@ RESPONSIVE DESING OFICIAL NUEVO
   color: rgb(26, 26, 26);
 }
 .contHeader .contHeader__ul .contHeader__li .ul_action .li_action:hover {
-  background: rgb(61, 61, 61);
+  background: rgb(50, 50, 50);
 }
 .contHeader .contHeader__ul .contHeader__li .ul_action .li_action:hover .a_action {
   color: white;
@@ -215,7 +196,7 @@ RESPONSIVE DESING OFICIAL NUEVO
   font-size: 25px;
 }
 .contHeader .contHeader__boxes .contHeader__box .boxIcon:hover {
-  color: rgb(61, 61, 61);
+  color: rgb(50, 50, 50);
   cursor: pointer;
 }
 .contHeader .contHeader__btn {
@@ -301,7 +282,7 @@ RESPONSIVE DESING OFICIAL NUEVO
     font-weight: 600;
   }
   .contHeader .contHeader__ul .contHeader__li .ul_action .li_action:hover {
-    background: rgb(61, 61, 61);
+    background: rgb(50, 50, 50);
   }
   .contHeader .contHeader__ul .contHeader__li .ul_action .li_action:hover .a_action {
     color: white;
@@ -357,7 +338,7 @@ RESPONSIVE DESING OFICIAL NUEVO
     font-size: 25px;
   }
   .contHeader .contHeader__boxes .contHeader__box .boxIcon:hover {
-    color: rgb(61, 61, 61);
+    color: rgb(50, 50, 50);
     cursor: pointer;
   }
   .contHeader .contHeader__btn {
@@ -871,7 +852,7 @@ RESPONSIVE DESING OFICIAL NUEVO
   background: white;
 }
 .contSectionFashion .contSectionFashion__title {
-  color: rgb(61, 61, 61);
+  color: rgb(50, 50, 50);
   font-size: 35px;
   font-weight: 600;
 }
@@ -884,7 +865,7 @@ RESPONSIVE DESING OFICIAL NUEVO
   width: 200px;
   padding: 10px 0px;
   border: none;
-  background: rgb(61, 61, 61);
+  background: rgb(50, 50, 50);
   color: white;
   cursor: pointer;
 }
@@ -947,7 +928,7 @@ body .contSectionCards {
 }
 html .contSectionCards .contCards__title,
 body .contSectionCards .contCards__title {
-  color: rgb(61, 61, 61);
+  color: rgb(50, 50, 50);
   margin-left: 60px;
   font-size: 35px;
   font-weight: 600;
@@ -995,7 +976,7 @@ body .contSectionCards .contCards .swiper .swiper-wrapper .swiper-slide .cont__s
 html .contSectionCards .contCards .swiper .swiper-wrapper .swiper-slide .cont__slide .slide__name,
 body .contSectionCards .contCards .swiper .swiper-wrapper .swiper-slide .cont__slide .slide__name {
   margin-top: 10px;
-  color: rgb(61, 61, 61);
+  color: rgb(50, 50, 50);
   font-size: 18px;
   font-weight: 600;
 }
@@ -1026,7 +1007,7 @@ body .contSectionCards .contCards .swiper .swiper-button-prev {
     padding: 40px 0px;
   }
   body .contSectionCards .contCards__title {
-    color: rgb(61, 61, 61);
+    color: rgb(50, 50, 50);
     margin-left: 20px;
     font-size: 35px;
     font-weight: 600;
@@ -1068,7 +1049,7 @@ body .contSectionCards .contCards .swiper .swiper-button-prev {
   }
   body .contSectionCards .contCards .swiper .swiper-wrapper .swiper-slide .cont__slide .slide__name {
     margin-top: 15px;
-    color: rgb(61, 61, 61);
+    color: rgb(50, 50, 50);
     font-size: 18px;
     font-weight: 600;
   }
@@ -1109,7 +1090,7 @@ body .contSectionCards .contCards .swiper .swiper-button-prev {
   transition: 0.2s linear;
 }
 .contBlocks .contBlocks__block .contBlocks__title {
-  color: rgb(61, 61, 61);
+  color: rgb(50, 50, 50);
   font-size: 35px;
   margin-left: 20px;
   z-index: 1;
@@ -1144,7 +1125,7 @@ body .contSectionCards .contCards .swiper .swiper-button-prev {
   margin-left: 20px;
   width: 100px;
   padding: 10px 0px;
-  background: rgb(61, 61, 61);
+  background: rgb(50, 50, 50);
   color: white;
   border: none;
 }
@@ -1196,7 +1177,7 @@ RESPONSIVE DESING OFICIAL NUEVO
     transition: 0.2s linear;
   }
   .contBlocks .contBlocks__block .contBlocks__title {
-    color: rgb(61, 61, 61);
+    color: rgb(50, 50, 50);
     font-size: 35px;
     margin-left: 20px;
     z-index: 1;
@@ -1231,7 +1212,7 @@ RESPONSIVE DESING OFICIAL NUEVO
     margin-left: 20px;
     width: 100px;
     padding: 10px 0px;
-    background: rgb(61, 61, 61);
+    background: rgb(50, 50, 50);
     color: white;
     border: none;
     z-index: 10;
@@ -1275,7 +1256,7 @@ RESPONSIVE DESING OFICIAL NUEVO
     transition: 0.2s linear;
   }
   .contBlocks .contBlocks__block .contBlocks__title {
-    color: rgb(61, 61, 61);
+    color: rgb(50, 50, 50);
     font-size: 35px;
     margin-left: 20px;
     z-index: 1;
@@ -1310,7 +1291,7 @@ RESPONSIVE DESING OFICIAL NUEVO
     margin-left: 20px;
     width: 100px;
     padding: 10px 0px;
-    background: rgb(61, 61, 61);
+    background: rgb(50, 50, 50);
     color: white;
     border: none;
     z-index: 10;
@@ -1354,7 +1335,7 @@ RESPONSIVE DESING OFICIAL NUEVO
     transition: 0.2s linear;
   }
   .contBlocks .contBlocks__block .contBlocks__title {
-    color: rgb(61, 61, 61);
+    color: rgb(50, 50, 50);
     font-size: 35px;
     margin-left: 20px;
     z-index: 1;
@@ -1389,7 +1370,7 @@ RESPONSIVE DESING OFICIAL NUEVO
     margin-left: 20px;
     width: 100px;
     padding: 10px 0px;
-    background: rgb(61, 61, 61);
+    background: rgb(50, 50, 50);
     color: white;
     border: none;
     z-index: 10;
@@ -1433,7 +1414,7 @@ RESPONSIVE DESING OFICIAL NUEVO
     transition: 0.2s linear;
   }
   .contBlocks .contBlocks__block .contBlocks__title {
-    color: rgb(61, 61, 61);
+    color: rgb(50, 50, 50);
     font-size: 35px;
     margin-left: 20px;
     z-index: 1;
@@ -1468,7 +1449,7 @@ RESPONSIVE DESING OFICIAL NUEVO
     margin-left: 20px;
     width: 100px;
     padding: 10px 0px;
-    background: rgb(61, 61, 61);
+    background: rgb(50, 50, 50);
     color: white;
     border: none;
     z-index: 10;
@@ -1486,10 +1467,12 @@ RESPONSIVE DESING OFICIAL NUEVO
 }
 @media (min-width: 320px) and (max-width: 480px) {
   .contBlocks {
-    margin: 30px auto;
-    width: 90%;
-    padding: 0px 0px;
-    background: white;
+    margin: 0px auto;
+    width: 100%;
+    padding: 0px 20px;
+    background-image: url(../images/background_movil.png);
+    background-repeat: repeat-y;
+    background-attachment: fixed;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -1512,7 +1495,7 @@ RESPONSIVE DESING OFICIAL NUEVO
     transition: 0.2s linear;
   }
   .contBlocks .contBlocks__block .contBlocks__title {
-    color: rgb(61, 61, 61);
+    color: rgb(50, 50, 50);
     font-size: 35px;
     margin-left: 20px;
     z-index: 1;
@@ -1547,7 +1530,7 @@ RESPONSIVE DESING OFICIAL NUEVO
     margin-left: 20px;
     width: 100px;
     padding: 10px 0px;
-    background: rgb(61, 61, 61);
+    background: rgb(50, 50, 50);
     color: white;
     border: none;
     z-index: 10;
@@ -1573,7 +1556,7 @@ RESPONSIVE DESING OFICIAL NUEVO
 }
 .contNews .contNews__title {
   text-align: center;
-  color: rgb(61, 61, 61);
+  color: rgb(50, 50, 50);
   font-size: 35px;
   font-weight: 600;
 }
@@ -1594,7 +1577,7 @@ RESPONSIVE DESING OFICIAL NUEVO
   width: calc(60% - 10px);
 }
 .contNews .contNews__block .contNews__boxRight .contNews__boxRight__title {
-  color: rgb(61, 61, 61);
+  color: rgb(50, 50, 50);
   font-size: 20px;
   font-weight: 600;
 }
@@ -1606,7 +1589,7 @@ RESPONSIVE DESING OFICIAL NUEVO
   width: 200px;
   padding: 10px 0px;
   border: none;
-  background: rgb(61, 61, 61);
+  background: rgb(50, 50, 50);
   color: white;
 }
 .contNews .contNews__block .contNews__boxRight .contNews__btn:hover {
@@ -1628,7 +1611,7 @@ RESPONSIVE DESING OFICIAL NUEVO
   }
   .contNews .contNews__title {
     text-align: center;
-    color: rgb(61, 61, 61);
+    color: rgb(50, 50, 50);
     font-size: 35px;
     font-weight: 600;
   }
@@ -1649,7 +1632,7 @@ RESPONSIVE DESING OFICIAL NUEVO
     width: calc(60% - 10px);
   }
   .contNews .contNews__block .contNews__boxRight .contNews__boxRight__title {
-    color: rgb(61, 61, 61);
+    color: rgb(50, 50, 50);
     font-size: 20px;
     font-weight: 600;
   }
@@ -1677,7 +1660,7 @@ RESPONSIVE DESING OFICIAL NUEVO
   }
   .contNews .contNews__title {
     text-align: center;
-    color: rgb(61, 61, 61);
+    color: rgb(50, 50, 50);
     font-size: 35px;
     font-weight: 600;
   }
@@ -1698,7 +1681,7 @@ RESPONSIVE DESING OFICIAL NUEVO
     width: calc(60% - 10px);
   }
   .contNews .contNews__block .contNews__boxRight .contNews__boxRight__title {
-    color: rgb(61, 61, 61);
+    color: rgb(50, 50, 50);
     font-size: 20px;
     font-weight: 600;
   }
@@ -1726,7 +1709,7 @@ RESPONSIVE DESING OFICIAL NUEVO
   }
   .contNews .contNews__title {
     text-align: center;
-    color: rgb(61, 61, 61);
+    color: rgb(50, 50, 50);
     font-size: 35px;
     font-weight: 600;
   }
@@ -1748,7 +1731,7 @@ RESPONSIVE DESING OFICIAL NUEVO
     width: 100%;
   }
   .contNews .contNews__block .contNews__boxRight .contNews__boxRight__title {
-    color: rgb(61, 61, 61);
+    color: rgb(50, 50, 50);
     font-size: 20px;
     font-weight: 600;
   }
@@ -1778,7 +1761,7 @@ RESPONSIVE DESING OFICIAL NUEVO
 }
 .contDesigner .contDesigner__title {
   margin-top: 10px;
-  color: rgb(61, 61, 61);
+  color: rgb(50, 50, 50);
   font-size: 22px;
   line-height: 25px;
   font-weight: 600;
@@ -1808,7 +1791,35 @@ RESPONSIVE DESING OFICIAL NUEVO
   }
   .contDesigner .contDesigner__title {
     margin-top: 10px;
-    color: rgb(61, 61, 61);
+    color: rgb(50, 50, 50);
+    font-size: 22px;
+    line-height: 25px;
+    font-weight: 600;
+  }
+  .contDesigner .contDesigner__description {
+    margin-top: 10px;
+    color: rgb(97, 97, 97);
+  }
+}
+/****************************************
+**************************************
+***************************************/
+@media (min-width: 320px) and (max-width: 1024px) {
+  .contDesigner {
+    margin: 10px auto;
+    width: 90%;
+    height: initial;
+    padding: 30px;
+    text-align: center;
+  }
+  .contDesigner .contDesigner__image {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+  }
+  .contDesigner .contDesigner__title {
+    margin-top: 10px;
+    color: rgb(50, 50, 50);
     font-size: 22px;
     line-height: 25px;
     font-weight: 600;
@@ -1822,7 +1833,7 @@ RESPONSIVE DESING OFICIAL NUEVO
   margin-top: 100px;
   width: 100%;
   padding: 50px 40px;
-  background: rgb(61, 61, 61);
+  background: rgb(50, 50, 50);
 }
 .contFooter .blockFooter {
   width: 100%;
@@ -1831,20 +1842,29 @@ RESPONSIVE DESING OFICIAL NUEVO
   align-items: flex-start;
 }
 .contFooter .blockFooter .contFooter__image {
-  width: 50px;
-  height: 50px;
+  width: 55px;
+  height: 55px;
+  background-image: url(../images/logo_white.png);
+  background-size: 100% 100%;
 }
-.contFooter .blockFooter .contfooter {
-  width: 200px;
+.contFooter .blockFooter .cont__block {
+  width: 500px;
+  padding: 10px 0px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
-.contFooter .blockFooter .contfooter .footer__li {
+.contFooter .blockFooter .cont__block .cont__list {
+  width: 100px;
+}
+.contFooter .blockFooter .cont__block .cont__list .cont__item {
   list-style: none;
 }
-.contFooter .blockFooter .contfooter .footer__li .footer__a {
+.contFooter .blockFooter .cont__block .cont__list .cont__item .cont__link {
   text-decoration: none;
   color: rgb(221, 221, 221);
 }
-.contFooter .blockFooter .contfooter .footer__li .footer__a:hover {
+.contFooter .blockFooter .cont__block .cont__list .cont__item .cont__link:hover {
   color: rgb(97, 97, 97);
   font-weight: 600;
 }
@@ -1864,6 +1884,58 @@ RESPONSIVE DESING OFICIAL NUEVO
   color: white;
 }
 
+/********************************************
+*************************************
+********************************************/
+@media (min-width: 320px) and (max-width: 640px) {
+  .contFooter {
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px 0px;
+  }
+  .contFooter .blockFooter {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .contFooter .blockFooter .contFooter__image {
+    width: 70px;
+    height: 70px;
+  }
+  .contFooter .blockFooter .cont__block {
+    width: 100%;
+    padding: 30px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .contFooter .blockFooter .cont__block .cont__list {
+    width: 70px;
+  }
+  .contFooter .blockFooter .cont__block .cont__list .cont__item {
+    list-style: none;
+  }
+  .contFooter .blockFooter .cont__block .cont__list .cont__item .cont__link {
+    text-decoration: none;
+  }
+  .contFooter .blockFooter .cont__block .cont__list .cont__item .cont__link:hover {
+    font-weight: 600;
+  }
+  .contFooter .footerLine {
+    width: 80%;
+    height: 1.5px;
+    margin: 10px auto;
+  }
+  .contFooter .blockPie {
+    width: 100%;
+    padding: 5px 0px;
+  }
+  .contFooter .blockPie .pie__copyRight {
+    text-align: center;
+  }
+}
 .btnTop {
   width: 50px;
   height: 50px;

@@ -461,10 +461,12 @@ RESPONSIVE DESING OFICIAL NUEVO
 
 @media (min-width:320px) and (max-width:480px){
     .contBlocks{
-        margin: 30px auto;
-        width: 90%;
-        padding: 0px 0px;
-        background:$color_white;
+        margin: 0px auto;
+        width: 100%;
+        padding: 0px 20px;
+        background-image: url(../images/background_movil.png);
+        background-repeat:repeat-y;
+        background-attachment: fixed;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
