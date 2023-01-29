@@ -30,3 +30,4 @@ https://antonmarchitec.github.io/fashion__template/
 "Me levanto todas las mañanas sabiendo que será un gran día.".
 
 ## Imagen del proyecto
+![image_templateFashion](https://user-images.githubusercontent.com/70084380/215327204-b1677817-c8f6-4213-ac55-8a116f5cca28.jpg)
