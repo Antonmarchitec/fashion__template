@@ -90,10 +90,17 @@ RESPONSIVE DESING OFICIAL NUEVO
 }
 
 
+
+
+
+
+
+
+
 /*******************************
 **********************************
 ************************/
-@media (min-width:500px) and (max-width:769px){
+@media (min-width:500px) and (max-width:1024px){
     .grid__container{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -122,6 +129,7 @@ RESPONSIVE DESING OFICIAL NUEVO
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
+        background: violet;
         grid-template-areas: 
             "grid__header            grid__header"
             "grid__banner            grid__banner"
